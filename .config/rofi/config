@@ -1,0 +1,5 @@
+rofi.combi-modi:	window,drun
+rofi.modi:		combi
+rofi.theme:		sidetab
+rofi.disable-history: false
+rofi.window-format: {w}: {c}  {t}

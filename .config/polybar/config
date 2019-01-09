@@ -1,0 +1,246 @@
+[bar/hellobar]
+width = 100%
+height = 24
+radius = 0
+fixed-center = true
+
+background = #60000000
+#foreground = #657b83
+foreground = #bbb
+
+line-size = 1
+line-color = 
+
+border-size = 0
+border-color =
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 2
+module-margin-right = 0
+
+font-0 = "Source Code Pro Semibold:size=10;1"
+font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
+font-2 = "Font Awesome 5 Brands:size=10;1"
+
+modules-left = powermenu i3
+modules-center = 
+modules-right = filesystem memory cpu temperature pulseaudio wlan eth backlight battery date
+
+tray-position = right
+;tray-padding =
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+label-mode-padding = 2
+label-mode-foreground = #657b83
+label-mode-background = #272827
+
+label-focused = %name%
+#label-focused-background = #4E524F
+label-focused-underline = #5eddea
+label-focused-foreground = #eee
+label-focused-padding = 2
+
+label-unfocused = %name%
+#label-unfocused-background = #7E807E
+label-unfocused-foreground = #aaa
+label-unfocused-padding = 2
+
+label-visible = %name%
+#label-visible-background = #7E807E
+label-visible-foreground = #83a0ea
+label-visible-padding = 2
+
+label-urgent = %name%
+label-urgent-background = #BA2922
+label-urgent-padding = 2
+
+[module/filesystem]
+type = internal/fs
+mount-0 = /
+interval = 300
+fixed-values = true
+format-mounted = <label-mounted>
+format-unmounted = <label-unmounted>
+label-mounted = "  %mountpoint%: %used%/%total% "
+label-mounted-underline = #dc2fef
+
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label>
+label = "  %percentage_used%% "
+label-underline = #ef4f2f
+
+[module/cpu]
+type = internal/cpu
+format = <label>
+label = "  %percentage%% "
+label-underline = #63ef2f
+
+[module/temperature]
+type = internal/temperature
+format = " <ramp> <label> "
+label = %temperature-c%
+label-underline = #ef7c2f
+format-underline = #ef7c2f
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+format-volume = <label-volume>
+label-volume = "  %percentage%%"
+label-volume-underline = #f9f93e
+label-muted = 🔇 muted
+label-muted-foreground = #ef5f2f
+label-muted-underline = #ef5f2f
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+accumulate-stats = true
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #83a0ea
+#format-connected-foreground = #7E807E
+#format-connected-background = #7E807E
+format-connected-padding = 2
+label-connected = %essid%%downspeed:9%
+
+format-disconnected = " No Wifi "
+format-disconnected-underline = #fe3c3a
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+#ramp-signal-foreground = #7E807E
+
+[module/eth]
+type = internal/network
+interface = wwp0s20u4i6
+interval = 3.0
+
+format-connected-padding = 2
+format-connected-foreground = #7E807E
+#format-connected-background = #7E807E
+format-connected-prefix = " "
+format-connected-prefix-foreground = #7E807E
+label-connected = %local_ip%
+
+format-disconnected =
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+date = " %d/%m/%Y"
+date-alt = " %Y-%m-%d"
+
+time = %r
+time-alt = %H:%M:%S
+
+format-prefix = 
+#format-foreground = #7E807E
+format-underline = #5eddea
+#format-background = #7E807E
+format-padding = 2
+
+label = %date% %time%
+
+[module/powermenu]
+type = custom/menu
+
+expand-right = true
+
+format-spacing = 1
+format-underline = #657b83
+label-open = "    "
+label-open-foreground = #657b83
+label-close =  cancel
+label-close-foreground = #BA2922
+label-separator = |
+label-separator-foreground = #BA2922
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+menu-0-2 = log off
+menu-0-2-exec = menu-open-3
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = reboot
+
+menu-2-0 = power off
+menu-2-0-exec = poweroff
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+menu-3-0 = log off
+menu-3-0-exec = pkill -KILL -u $USER
+menu-3-1 = cancel
+menu-3-1-exec = menu-open-0
+
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = ADP1
+poll-interval = 5
+time-format = %H:%M
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = #80ec5a
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = #ff4c34
+label-charging = Charging %percentage%%
+label-discharging =  " %percentage%% "
+label-full =   100%
+label-full-underline = #80ec5a
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+# ramp-capacity-0-foreground = #ff0000
+# ramp-capacity-1-foreground = #ef732b
+# ramp-capacity-2-foreground = #dda646
+# ramp-capacity-3-foreground = #f4ee92
+# ramp-capacity-4-foreground = #8afc8c
+bar-capacity-width = 10
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 400
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-3 = 
+animation-discharging-4 = 
+animation-discharging-framerate = 500
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
