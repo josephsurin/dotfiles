@@ -38,7 +38,7 @@ cursor-scroll = ns-resize
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
-wrapping-scroll = false
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = #657b83
@@ -49,6 +49,10 @@ label-focused = %name%
 label-focused-underline = #5eddea
 label-focused-foreground = #eee
 label-focused-padding = 2
+
+label-empty = %name%
+label-empty-foreground = #222
+label-empty-padding = 2
 
 label-unfocused = %name%
 #label-unfocused-background = #7E807E
