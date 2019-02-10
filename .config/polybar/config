@@ -1,14 +1,14 @@
 [bar/hellobar]
 width = 100%
-height = 24
+height = 28
 radius = 0
 fixed-center = true
 
-background = #60000000
+background = #313542
 #foreground = #657b83
 foreground = #bbb
 
-line-size = 1
+line-size = 
 line-color = 
 
 border-size = 0
@@ -17,7 +17,7 @@ border-color =
 padding-left = 0
 padding-right = 0
 
-module-margin-left = 2
+module-margin-left = 1
 module-margin-right = 0
 
 font-0 = "Source Code Pro Semibold:size=10;1"
@@ -26,7 +26,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = powermenu i3
 modules-center = 
-modules-right = filesystem memory cpu temperature pulseaudio wlan eth backlight battery date
+modules-right = memory cpu temperature pulseaudio wlan eth backlight battery date keyboard      
 
 tray-position = right
 ;tray-padding =
@@ -45,9 +45,9 @@ label-mode-foreground = #657b83
 label-mode-background = #272827
 
 label-focused = %name%
-#label-focused-background = #4E524F
+label-focused-background = #85eaf2
 label-focused-underline = #5eddea
-label-focused-foreground = #eee
+label-focused-foreground = #444
 label-focused-padding = 2
 
 label-empty = %name%
@@ -65,7 +65,7 @@ label-visible-foreground = #83a0ea
 label-visible-padding = 2
 
 label-urgent = %name%
-label-urgent-background = #BA2922
+label-urgent-background = #f95d54
 label-urgent-padding = 2
 
 [module/filesystem]
@@ -117,16 +117,17 @@ type = internal/network
 interface = wlp3s0
 interval = 1.0
 accumulate-stats = true
-format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #83a0ea
+format-connected = <ramp-signal><label-connected>
+format-connected-background =
 #format-connected-foreground = #7E807E
 #format-connected-background = #7E807E
 format-connected-padding = 2
-label-connected = %essid%%downspeed:9%
+label-connected = %downspeed:9%
 
 format-disconnected = " No Wifi "
-format-disconnected-underline = #fe3c3a
-
+format-disconnected-foreground = #ffffff
+format-disconnected-background = #fe3c3a
+format-disconnected-padding = 2
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
@@ -166,6 +167,16 @@ format-padding = 2
 
 label = %date% %time%
 
+[module/keyboard]
+type = internal/xkeyboard
+
+format = <label-indicator>
+label-indicator = %name%
+label-indicator-padding = 2
+format-background = #f99740
+format-foreground = #fff
+
+
 [module/powermenu]
 type = custom/menu
 
@@ -173,9 +184,10 @@ expand-right = true
 
 format-spacing = 1
 format-underline = #657b83
-label-open = "    "
+label-open = "   "
 label-open-foreground = #657b83
 label-close =  cancel
+label-close-padding = 2
 label-close-foreground = #BA2922
 label-separator = |
 label-separator-foreground = #BA2922
@@ -210,10 +222,12 @@ adapter = ADP1
 poll-interval = 5
 time-format = %H:%M
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #80ec5a
+format-charging-padding = 2
+format-charging-background = #37ce5d
+format-charging-foreground = #fff
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = #ff4c34
-label-charging = Charging %percentage%%
+label-charging = %percentage%%
 label-discharging =  " %percentage%% "
 label-full =   100%
 label-full-underline = #80ec5a

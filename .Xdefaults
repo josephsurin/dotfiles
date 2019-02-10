@@ -4,7 +4,7 @@
 
 ! special colors
 *.foreground:  #a39e9b
-*.background:  #2f1e2e
+*.background:  #313542
 *.cursorColor:  #a39e9b
 ! black
 *.color0:      #2f1e2e
@@ -34,17 +34,17 @@
 URxvt*scrollBar:         false
 URxvt*scrollBar_right:   false
 
-URxvt*transparent:       true
-URxvt*shading:       40
+URxvt*transparent:       false
 
-URxvt.font: xft:Noto Sans Mono:pixelsize=14
-URxvt.letterSpace: 0
+
+URxvt.font: xft:Noto Sans  Mono:size=12,xft:Inconsolatas:size=10
+URxvt.letterSpace: -1
 
 *antialias:  true
 *autohint:   false
 
-URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: Browser?
+URxvt.perl-ext-common: default,matcher,font-size
+URxvt.url-launcher: firefox
 
 URxvt.matcher.button: 1
 
