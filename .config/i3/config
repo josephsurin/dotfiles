@@ -176,7 +176,7 @@ mode "press Enter to poweroff" {
 bindsym $mod+Shift+S mode "press D to confirm poweroff"
 
 bindsym $mod+i exec --no-startup-id urxvt -e sh -c "vim ~/.config/i3/config"
-bindsym $mod+n exec --no-startup-id urxvt -e sh -c "vim ~/Libraries/Documents/notes.txt"
+bindsym $mod+n exec --no-startup-id notable
 bindsym $mod+e exec --no-startup-id urxvt -e sh -c "ranger"
 
 bindsym --release $mod+Print exec ~/.config/scripts/region_capture.sh 
