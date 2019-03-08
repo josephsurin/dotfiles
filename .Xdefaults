@@ -37,7 +37,7 @@ URxvt*scrollBar_right:   false
 URxvt*transparent:       false
 
 
-URxvt.font: xft:Noto Sans  Mono:size=12,xft:Inconsolatas:size=10
+URxvt.font: xft:Noto Sans Mono:size=12,xft:Inconsolatas:size=10,xft:EmojiOne:pixelsize=12,xft: Source Han Sans JP:pixelsize=16
 URxvt.letterSpace: -1
 
 *antialias:  true

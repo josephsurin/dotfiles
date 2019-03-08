@@ -6,7 +6,7 @@ Dotfiles for my Arch Linux system running on my Thinkpad X230
   - Window Manager: i3-gaps
   - Status Bar: polybar
   - Window Switcher / Application Menu: rofi
-  - Terminal: urxvt
+  - Terminal: Termite
   - File Manager: ranger
   - PDF viewer: zathura
   - Browser: Firefox

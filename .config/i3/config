@@ -30,7 +30,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -175,9 +175,11 @@ mode "press Enter to poweroff" {
 }
 bindsym $mod+Shift+S mode "press D to confirm poweroff"
 
-bindsym $mod+i exec --no-startup-id urxvt -e sh -c "vim ~/.config/i3/config"
+bindsym $mod+i exec --no-startup-id termite -e "vim $HOME/.config/i3/config"
 bindsym $mod+n exec --no-startup-id notable
-bindsym $mod+e exec --no-startup-id urxvt -e sh -c "ranger"
+bindsym $mod+o exec --no-startup-id libreoffice
+bindsym $mod+e exec --no-startup-id termite -e "ranger"
+bindsym $mod+p exec --no-startup-id termite -e "python"
 
 bindsym --release $mod+Print exec ~/.config/scripts/region_capture.sh 
 bindsym --release Print exec ~/.config/scripts/screen_capture.sh
@@ -318,8 +320,9 @@ for_window [title=" - AzPainter$"] border none
 
 exec --no-startup-id $HOME/.config/scripts/startup.sh
 
-exec --no-startup-id feh --bg-scale ~/Downloads/wallpapers/train.png
+exec --no-startup-id feh --bg-scale ~/Downloads/wallpapers/gnomes.png
 #exec_always --no-startup-id copyq
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
 exec_always --no-startup-id dunst
+exec_always --no-startup-id udiskie --smart-tray &
