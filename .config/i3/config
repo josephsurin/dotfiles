@@ -320,4 +320,11 @@ mode "$mode_gaps_left" {
 }
 
 for_window [title=" - AzPainter$"] border none
+exec --no-startup-id $HOME/.config/scripts/startup.sh
 
+exec --no-startup-id feh --bg-scale ~/Downloads/wallpapers/gnomes.png
+#exec_always --no-startup-id copyq
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id nm-applet
+exec_always --no-startup-id dunst
+exec_always --no-startup-id udiskie --smart-tray &
