@@ -118,6 +118,9 @@ bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 bindsym $mod+Shift+Left workspace prev
 bindsym $mod+Shift+Right workspace next
+bindsym $mod+Mod1+h workspace prev
+bindsym $mod+Mod1+l workspace next
+bindsym $mod+Tab workspace back_and_forth
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -318,11 +321,3 @@ mode "$mode_gaps_left" {
 
 for_window [title=" - AzPainter$"] border none
 
-exec --no-startup-id $HOME/.config/scripts/startup.sh
-
-exec --no-startup-id feh --bg-scale ~/Downloads/wallpapers/gnomes.png
-#exec_always --no-startup-id copyq
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec --no-startup-id nm-applet
-exec_always --no-startup-id dunst
-exec_always --no-startup-id udiskie --smart-tray &
