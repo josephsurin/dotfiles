@@ -168,15 +168,16 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-mode "press D to confirm poweroff" {
+mode "Lock (L), confirm poweroff (D)"  {
 	bindsym Escape mode "default"
+	bindsym L exec --no-startup-id i3lock
 	bindsym D mode "press Enter to poweroff"
 }
 mode "press Enter to poweroff" {
 	bindsym Escape mode "default"
 	bindsym Return exec poweroff
 }
-bindsym $mod+Shift+S mode "press D to confirm poweroff"
+bindsym $mod+Shift+S mode "Lock (L), confirm poweroff (D)"
 
 bindsym $mod+i exec --no-startup-id termite -e "vim $HOME/.config/i3/config"
 bindsym $mod+n exec --no-startup-id notable
