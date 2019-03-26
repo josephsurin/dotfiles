@@ -20,7 +20,7 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 0
 
-font-0 = "Source Code Pro Semibold:size=10;1"
+font-0 = "Noto Sans:size=10;1"
 font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
 font-2 = "Font Awesome 5 Brands:size=10;1"
 
