@@ -2,6 +2,7 @@ vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
+map <C-n> :NERDTreeToggle<CR>
 highlight LineNr ctermfg=grey
 set number
 call plug#begin('~/.local/share/nvim/plugged')
