@@ -97,3 +97,4 @@ source $ZSH/oh-my-zsh.sh
 alias ls="lsd"
 alias cdds="cd ~/Downloads/shit"
 alias cat="bat"
+alias vim="nvim"
