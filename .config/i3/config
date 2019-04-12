@@ -179,7 +179,7 @@ mode "press Enter to poweroff" {
 }
 bindsym $mod+Shift+S mode "Lock (L), confirm poweroff (D)"
 
-bindsym $mod+i exec --no-startup-id termite -e "vim $HOME/.config/i3/config"
+bindsym $mod+i exec --no-startup-id termite -e "nvim $HOME/.config/i3/config"
 bindsym $mod+n exec --no-startup-id notable
 bindsym $mod+o exec --no-startup-id libreoffice
 bindsym $mod+e exec --no-startup-id termite -e "ranger"
