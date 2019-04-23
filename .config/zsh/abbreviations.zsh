@@ -52,6 +52,7 @@ abbrevs+=(
 # Program aliases
 abbrevs+=(
   "dl"		"http --download"
+  "jn"		"jupyter-notebook"
 )
 
 for abbr in ${(k)abbrevs}; do
