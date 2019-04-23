@@ -9,6 +9,7 @@ abbrevs=(
   "lst"		"ls --tree"
   "lsg"		"ls | grep"
   "hsg"		"history | grep"
+  "hs"		"history"
   "lsth"	"ls -t | head -n 10"
   "mdc"		"mkdir -p __CURSOR__ && cd \$_"
   "fdg"		"find . | grep"
