@@ -12,6 +12,8 @@ abbrevs=(
   "hs"		"history"
   "lsth"	"ls -t | head -n 10"
   "mdc"		"mkdir -p __CURSOR__ && cd \$_"
+  "dua"		"du -h"
+  "dus"		"du -sh"
   "fdg"		"find . | grep"
   "pgr"		"| grep"
   "awkp"	"| awk '{print \$__CURSOR__}'"
@@ -25,13 +27,23 @@ abbrevs+=(
   "cdds"	"cd ~/Downloads/shit"
   "ds"		"~/Downloads/shit"
   "cdctf"	"cd ~/Libraries/Code/ctf-notes/"
+  "cdln"	"cd ~/Libraries/Notes/"
+  "cdu"		"cd ~/Libraries/uni/"
+  "cdc"		"cd ~/.config/"
+)
+
+# File aliases
+abbrevs+=(
+  "vz"		"v ~/.zshrc"
+  "vabbs"	"v ~/.config/zsh/abbreviations.zsh"
+  "vi3"		"v ~/.config/i3/config"
 )
 
 # git aliases
 abbrevs+=(
   "ga"		"git add"
   "gaa"		"git add ."
-  "gcm"		"git commit -m"
+  "gcm"		"git commit -m '__CURSOR__'"
   "gp"		"git push"
   "gpl"		"git pull"
   "gst"		"git status"
@@ -39,6 +51,7 @@ abbrevs+=(
 
 # Program aliases
 abbrevs+=(
+  "dl"		"http --download"
 )
 
 for abbr in ${(k)abbrevs}; do
