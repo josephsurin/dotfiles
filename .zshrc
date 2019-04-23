@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/joseph/.oh-my-zsh"
+ export ZSH="/home/joseph/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -65,39 +65,18 @@ HIST_STAMPS="%d/%m/%Y %T"
 plugins=(git npm copyfile extract python vi-mode zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.config/zsh/abbreviations.zsh
 
 # User configuration
+export EDITOR=vim
+export VISUAL=vim
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls="lsd"
 alias lst="ls --tree"
 alias cdds="cd ~/Downloads/shit"
+alias ds="~/Downloads/shit"
 alias cat="bat"
-alias vim="nvim"
-alias lsg="ls | grep"
+alias lsg="ls | grep "
+alias hsg="history | grep "
 alias cdctf="cd ~/Libraries/Code/ctf-notes/"
+alias v="vim"
