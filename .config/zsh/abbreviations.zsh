@@ -47,6 +47,7 @@ abbrevs+=(
   "gp"		"git push"
   "gpl"		"git pull"
   "gst"		"git status"
+  "gcl"		"git clone"
 )
 
 # Program aliases
