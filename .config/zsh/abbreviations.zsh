@@ -28,6 +28,7 @@ abbrevs+=(
   "ds"		"~/Downloads/shit"
   "cdctf"	"cd ~/Libraries/Code/ctf-notes/"
   "cdln"	"cd ~/Libraries/Notes/"
+  "cdlc"	"cd ~/Libraries/Code/"
   "cdu"		"cd ~/Libraries/uni/"
   "cdc"		"cd ~/.config/"
 )
