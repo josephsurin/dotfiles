@@ -55,6 +55,9 @@ abbrevs+=(
 abbrevs+=(
   "dl"		"http --download"
   "jn"		"jupyter-notebook"
+  "xc"		"xclip -selection clipboard"
+  "b64"		"base64"
+  "b64d"	"base64 -d"
 )
 
 for abbr in ${(k)abbrevs}; do
