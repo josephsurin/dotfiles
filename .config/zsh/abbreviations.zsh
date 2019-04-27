@@ -58,6 +58,7 @@ abbrevs+=(
   "xc"		"xclip -selection clipboard"
   "b64"		"base64"
   "b64d"	"base64 -d"
+  "mpdf"	"man -Tpdf __CURSOR__ | zathura -"
 )
 
 for abbr in ${(k)abbrevs}; do
