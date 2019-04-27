@@ -59,6 +59,9 @@ abbrevs+=(
   "b64"		"base64"
   "b64d"	"base64 -d"
   "mpdf"	"man -Tpdf __CURSOR__ | zathura -"
+  "vfz"		"vim \"\$(fzf --reverse --inline-info)\""
+  "cfz"		"cat \"\$(fzf --reverse --inline-info)\""
+  "cdfz"	"cd \"\$(dirname \"\$(fzf --reverse --inline-info)\")\""
 )
 
 for abbr in ${(k)abbrevs}; do
