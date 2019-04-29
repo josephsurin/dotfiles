@@ -12,7 +12,7 @@ abbrevs=(
   "hs"		"history"
   "lsth"	"ls -t | head -n 10"
   "mdc"		"mkdir -p __CURSOR__ && cd \$_"
-  "dua"		"du -h"
+  "dua"		"du -ah"
   "dus"		"du -sh"
   "fdg"		"find . | grep"
   "pgr"		"| grep"
