@@ -64,6 +64,7 @@ abbrevs+=(
   "vfz"		"vim \"\$(fzf --reverse --inline-info)\""
   "cfz"		"cat \"\$(fzf --reverse --inline-info)\""
   "cdfz"	"cd \"\$(dirname \"\$(fzf --reverse --inline-info)\")\""
+  "qemu"	"qemu-system-x86_64"
 )
 
 for abbr in ${(k)abbrevs}; do
