@@ -32,6 +32,7 @@ abbrevs+=(
   "cdlc"	"cd ~/Libraries/Code/"
   "cdu"		"cd ~/Libraries/uni/"
   "cdc"		"cd ~/.config/"
+  "cdm"		"cd /run/media/joseph/"
 )
 
 # File aliases
