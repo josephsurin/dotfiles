@@ -14,6 +14,7 @@ abbrevs=(
   "mdc"		"mkdir -p __CURSOR__ && cd \$_"
   "dua"		"du -ah"
   "dus"		"du -sh"
+  "cpv"		"rsync -ah --progress"
   "fdg"		"find . | grep"
   "pgr"		"| grep"
   "awkp"	"| awk '{print \$__CURSOR__}'"
