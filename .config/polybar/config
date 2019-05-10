@@ -216,7 +216,7 @@ menu-3-1-exec = menu-open-0
 
 [module/battery]
 type = internal/battery
-full-at = 99
+full-at = 95
 battery = BAT0
 adapter = ADP1
 poll-interval = 5
