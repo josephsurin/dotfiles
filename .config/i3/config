@@ -338,6 +338,8 @@ mode "$mouse" {
 	bindsym u exec --no-startup-id xdotool click 1
 	bindsym i exec --no-startup-id xdotool click 2
 	bindsym o exec --no-startup-id xdotool click 3
+	bindsym m exec --no-startup-id xdotool click 4
+	bindsym n exec --no-startup-id xdotool click 5
 }
 
 for_window [title=" - AzPainter$"] border none
