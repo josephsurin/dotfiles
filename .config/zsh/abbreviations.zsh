@@ -57,6 +57,7 @@ abbrevs+=(
 abbrevs+=(
   "dl"		"http --download"
   "jn"		"jupyter-notebook"
+  "pi"		"python -i"
   "xc"		"xclip -selection clipboard"
   "b64"		"base64"
   "b64d"	"base64 -d"
