@@ -15,6 +15,7 @@ abbrevs=(
   "dua"		"du -ah"
   "dus"		"du -sh"
   "cpv"		"rsync -ah --progress"
+  "2dv"		"2>/dev/null"
   "fdg"		"find . | grep"
   "pgr"		"| grep"
   "awkp"	"| awk '{print \$__CURSOR__}'"
