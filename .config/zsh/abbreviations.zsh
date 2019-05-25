@@ -13,6 +13,7 @@ abbrevs=(
   "lsth"	"ls -t | head -n 10"
   "mdc"		"mkdir -p __CURSOR__ && cd \$_"
   "dua"		"du -ah"
+  "_"		"\"\$_\""
   "dus"		"du -sh"
   "cpv"		"rsync -ah --progress"
   "2dv"		"2>/dev/null"
