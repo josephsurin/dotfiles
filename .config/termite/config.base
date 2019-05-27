@@ -1,0 +1,11 @@
+[options]
+allow_bold = true
+bold_is_bright = true
+clickable_url = true
+dynamic_title = true
+font = Noto Sans Mono 11.5
+scrollback_lines = 10000
+hyperlinks = false
+[hints]
+
+[colors]
