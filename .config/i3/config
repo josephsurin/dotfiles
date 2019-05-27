@@ -195,7 +195,7 @@ bindcode 121 exec --no-startup-id pulseaudio-ctl mute
 bindcode 122 exec --no-startup-id pulseaudio-ctl down 5
 bindcode 123 exec --no-startup-id pulseaudio-ctl up 5
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 gaps inner 8
 gaps outer 4

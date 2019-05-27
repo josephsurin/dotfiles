@@ -4,7 +4,7 @@ height = 28
 radius = 0
 fixed-center = true
 
-background = #313542
+background = #c6313542
 #foreground = #657b83
 foreground = #bbb
 

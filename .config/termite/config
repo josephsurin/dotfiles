@@ -10,7 +10,7 @@ hyperlinks = false
 
 [colors]
 foreground = #c5d3dc
-background = #252130
+background = rgba(37, 33, 48, 0.9)
 cursor = #c5d3dc
 color0 = #252130
 color1 = #5B709B
