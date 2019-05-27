@@ -78,7 +78,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+bindsym $mod+Shift+t layout tabbed
 bindsym $mod+t layout toggle split
 
 # toggle tiling / floating
@@ -179,7 +179,7 @@ mode "press Enter to poweroff" {
 }
 bindsym $mod+Shift+S mode "Lock (L), confirm poweroff (D)"
 
-bindsym $mod+i exec --no-startup-id termite -e "nvim $HOME/.config/i3/config"
+bindsym $mod+i exec --no-startup-id termite -e "vim $HOME/.config/i3/config"
 bindsym $mod+n exec --no-startup-id notable
 bindsym $mod+o exec --no-startup-id libreoffice
 bindsym $mod+e exec --no-startup-id termite -e "ranger"
@@ -187,6 +187,9 @@ bindsym $mod+p exec --no-startup-id termite -e "python"
 
 bindsym --release $mod+Print exec ~/.config/scripts/region_capture.sh 
 bindsym --release Print exec ~/.config/scripts/screen_capture.sh
+
+bindsym --release $mod+w exec ~/.config/scripts/walswitch.sh
+bindsym --release $mod+Shift+w exec ~/.config/scripts/walswitch.sh -r
 
 bindcode 121 exec --no-startup-id pulseaudio-ctl mute
 bindcode 122 exec --no-startup-id pulseaudio-ctl down 5
@@ -347,8 +350,6 @@ mode "$mouse" {
 for_window [title=" - AzPainter$"] border none
 exec --no-startup-id $HOME/.config/scripts/startup.sh
 
-exec --no-startup-id feh --bg-scale ~/Downloads/wallpapers/gnomes.png
-#exec_always --no-startup-id copyq
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id nm-applet
 exec_always --no-startup-id dunst

@@ -68,7 +68,6 @@ abbrevs+=(
   "cfz"		"cat \"\$(fzf --reverse --inline-info)\""
   "cdfz"	"cd \"\$(dirname \"\$(fzf --reverse --inline-info)\")\""
   "qemu"	"qemu-system-x86_64"
-  "vbmp"	"~/.config/scripts/vboxmodprobe.sh"
 )
 
 for abbr in ${(k)abbrevs}; do
