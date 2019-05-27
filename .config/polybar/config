@@ -1,17 +1,17 @@
 [bar/hellobar]
 width = 100%
-height = 28
+height = 32
 radius = 0
 fixed-center = true
 
-background = #c6313542
+background = #a9313542
 #foreground = #657b83
 foreground = #bbb
 
-line-size = 
-line-color = 
+line-size =
+line-color =
 
-border-size = 0
+border-size =
 border-color =
 
 padding-left = 0
