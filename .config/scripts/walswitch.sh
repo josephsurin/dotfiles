@@ -43,4 +43,4 @@ fi
 echo 'CURRENT_WAL="'"$CHANGETO"'"' | tee "${HOME}/Downloads/shit/.cycle" &> /dev/null || exit 1
 
 # echo "${WALLS}/${CHANGETO}" # debugging purposes
-wal -i "${WALLS}/${CHANGETO}" -e && "$HOME/.config/scripts/termite-wal.sh"
+wal -i "${WALLS}/${CHANGETO}" --backend haishoku -e && "$HOME/.config/scripts/termite-wal.sh"
