@@ -47,4 +47,3 @@ URxvt.perl-ext-common: default,matcher,font-size
 URxvt.url-launcher: firefox
 
 URxvt.matcher.button: 1
-

@@ -9,9 +9,9 @@ highlight LineNr ctermfg=grey
 set number
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-Plug 'crusoexia/vim-monokai'
-Plug 'joshdick/onedark.vim'
-Plug 'liuchengxu/space-vim-dark'
+"Plug 'crusoexia/vim-monokai'
+"Plug 'joshdick/onedark.vim'
+"Plug 'liuchengxu/space-vim-dark'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ncm2/ncm2'
@@ -22,5 +22,5 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 call plug#end()
 syntax on
-colorscheme onedark
-let g:airline_theme='powerlineish'
+"colorscheme onedark
+let g:airline_theme='bubblegum'
