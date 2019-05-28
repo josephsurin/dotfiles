@@ -29,6 +29,7 @@ abbrevs=(
 abbrevs+=(
   "cdds"	"cd ~/Downloads/shit"
   "ds"		"~/Downloads/shit"
+  "cdw"		"cd ~/Downloads/wallpapers"
   "cdctf"	"cd ~/Libraries/Code/ctf-notes/"
   "cdln"	"cd ~/Libraries/Notes/"
   "cdlc"	"cd ~/Libraries/Code/"

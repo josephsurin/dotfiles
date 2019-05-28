@@ -31,3 +31,9 @@ cols+="color13 = $color13\n"
 cols+="color14 = $color14\n"
 cols+="color15 = $color15"
 printf "$cols" >> "$HOME/.config/termite/config"
+
+# update greeter wallpaper
+if [ -f "$HOME/Downloads/wallpapers/wall.jpg" ]; then
+	rm "$HOME/Downloads/wallpapers/wall.jpg"
+fi
+cp "$wallpaper" "$HOME/Downloads/wallpapers/wall.jpg"
