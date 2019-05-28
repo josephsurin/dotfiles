@@ -197,8 +197,8 @@ bindcode 123 exec --no-startup-id pulseaudio-ctl up 5
 
 for_window [class="^.*"] border pixel 0
 
-gaps inner 8
-gaps outer 4
+gaps inner 4
+gaps outer 2
 
 smart_gaps on
 
@@ -355,3 +355,4 @@ exec --no-startup-id nm-applet
 exec_always --no-startup-id dunst
 exec_always --no-startup-id udiskie --smart-tray &
 exec_always --no-startup-id compton
+exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w kleg1.jpg
