@@ -45,9 +45,9 @@ label-mode-foreground = #657b83
 label-mode-background = #272827
 
 label-focused = %name%
-label-focused-background = #85eaf2
+#label-focused-background = #85eaf2
 label-focused-underline = #5eddea
-label-focused-foreground = #444
+label-focused-foreground = #85eaf2
 label-focused-padding = 2
 
 label-empty = %name%
