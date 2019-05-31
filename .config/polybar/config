@@ -1,20 +1,21 @@
 [bar/hellobar]
 width = 100%
-height = 32
+height = 34
 radius = 0
 fixed-center = true
 
-background = #a9313542
+background = #b6222228
+#background = #a9313542
 #foreground = #657b83
 foreground = #bbb
 
-line-size =
+line-size = 
 line-color =
 
-border-size =
+border-size = 
 border-color =
 
-padding-left = 0
+padding-left = 4px
 padding-right = 0
 
 module-margin-left = 1
@@ -25,8 +26,8 @@ font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
 font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = powermenu i3
-modules-center = 
-modules-right = memory cpu temperature pulseaudio wlan eth backlight battery date keyboard      
+modules-center = date
+modules-right = memory cpu temperature pulseaudio wlan eth backlight battery
 
 tray-position = right
 ;tray-padding =
@@ -108,8 +109,8 @@ type = internal/pulseaudio
 format-volume = <label-volume>
 label-volume = "  %percentage%%"
 label-volume-underline = #f9f93e
-label-muted = 🔇 muted
-label-muted-foreground = #ef5f2f
+label-muted = 
+#label-muted-foreground = #ef5f2f
 label-muted-underline = #ef5f2f
 
 [module/wlan]
@@ -223,8 +224,9 @@ poll-interval = 5
 time-format = %H:%M
 format-charging = <animation-charging> <label-charging>
 format-charging-padding = 2
-format-charging-background = #37ce5d
-format-charging-foreground = #fff
+#format-charging-background = #37ce5d
+#format-charging-foreground = #fff
+format-charging-foreground = #37ce5d
 format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = #ff4c34
 label-charging = %percentage%%
