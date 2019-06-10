@@ -70,6 +70,7 @@ abbrevs+=(
   "cdfz"	"cd \"\$(dirname \"\$(fzf --reverse --inline-info)\")\""
   "qemu"	"qemu-system-x86_64"
   "ws"		"~/.config/scripts/walswitch.sh"
+  "pqi"		"pacman -Qi"
 )
 
 for abbr in ${(k)abbrevs}; do

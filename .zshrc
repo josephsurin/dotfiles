@@ -71,7 +71,7 @@ source ~/.config/zsh/abbreviations.zsh
 # User configuration
 export EDITOR=vim
 export VISUAL=vim
-export PATH=~/.npm-global/bin:$PATH
+export PATH=/home/joseph/.local/bin:~/.npm-global/bin:$PATH
 
 alias ls="lsd"
 alias lst="ls --tree"
@@ -108,3 +108,4 @@ alias 2dv="2>/dev/null"
 alias _="\"$_\""
 alias ws="~/.config/scripts/walswitch.sh"
 alias cdw="cd ~/Downloads/wallpapers"
+alias pqi="pacman -Qi"
