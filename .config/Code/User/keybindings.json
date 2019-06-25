@@ -1,0 +1,88 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+h",
+        "command": "cursorLeft"
+    },
+    {
+        "key": "alt+j",
+        "command": "cursorDown"
+    },
+    {
+        "key": "alt+k",
+        "command": "cursorUp"
+    },
+    {
+        "key": "alt+l",
+        "command": "cursorRight"
+    },
+    {
+        "key": "alt+shift+h",
+        "command": "cursorLeftSelect"
+    },
+    {
+        "key": "alt+shift+j",
+        "command": "cursorDownSelect"
+    },
+    {
+        "key": "alt+shift+k",
+        "command": "cursorUpSelect"
+    },
+    {
+        "key": "alt+shift+l",
+        "command": "cursorRightSelect"
+    },
+    {
+        "key": "alt+u",
+        "command": "undo"
+    },
+    {
+        "key": "alt+shift+u",
+        "command": "redo"
+    },
+    {
+        "key": "shift+alt+a",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "alt+w",
+        "command": "cursorWordEndRight"
+    },
+    {
+        "key": "alt+shift+w",
+        "command": "cursorWordEndRightSelect"
+    },
+    {
+        "key": "alt+b",
+        "command": "cursorWordStartLeft"
+    },
+    {
+        "key": "alt+shift+b",
+        "command": "cursorWordStartLeftSelect"
+    },
+    {
+        "key": "alt+x",
+        "command": "deleteRight"
+    },
+    {
+        "key": "alt+shift+x",
+        "command": "deleteLeft"
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "workbench.action.files.saveAll"
+    }
+]

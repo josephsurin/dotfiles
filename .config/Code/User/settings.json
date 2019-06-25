@@ -1,0 +1,30 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'Source Code Pro','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "workbench.colorCustomizations": {
+        "editor.background": "#14161bf1",
+        "sideBar.background": "#101015f9",
+        "tab.activeBackground": "#111319f1",
+        "tab.inactiveBackground": "#191b20a1",
+        "editorLineNumber.activeForeground": "#b3b4da",
+        "editor.lineHighlightBackground": "#192328",
+        "statusBar.background": "#090910d9",
+        "activityBar.background": "#090910d9",
+        "input.background": "#090910d9",
+        "editorSuggestWidget.background": "#111319f1",
+        "sideBarSectionHeader.background": "#090910d9",
+        "sideBarSectionHeader.foreground": "#fefefe",
+        "list.activeSelectionBackground": "#070709",
+        "list.inactiveSelectionBackground": "#070709",
+        "tab.activeBorder": "#bbbbcc",
+        "list.focusBackground": "#070709",
+        "scrollbarSlider.hoverBackground": "#090910d9",
+        "scrollbarSlider.background": "#111114ff",
+        "scrollbarSlider.activeBackground": "#070709",
+        "editorGroupHeader.tabsBackground": "#090910d9"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "guides.enabled": false,
+    "editor.wordWrap": "on"
+}
