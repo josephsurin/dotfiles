@@ -3,6 +3,7 @@ vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
 imap <C-l> <ESC>
+inoremap jk <ESC>
 vmap <C-l> <ESC>
 map <C-n> :NERDTreeToggle<CR>
 highlight LineNr ctermfg=grey
