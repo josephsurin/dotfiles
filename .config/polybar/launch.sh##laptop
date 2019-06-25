@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+killall -q polybar
+MONITOR="MONITOR0" polybar --reload hellobar1 &

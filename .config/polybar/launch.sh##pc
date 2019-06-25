@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+killall -q polybar
+
+# multiple monitors
+#for m in $(polybar --list-monitors | cut -d":" -f1); do
+#	MONITOR="$m" polybar --reload hellobar &
+#done
+
+MONITOR="VGA-0" polybar --reload hellobar1 &
+MONITOR="DVI-D-0" polybar --reload hellobar2 &
