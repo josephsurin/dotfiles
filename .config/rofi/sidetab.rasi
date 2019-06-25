@@ -12,7 +12,9 @@ configuration {
 }
 
 * {
-	background-color:            rgba(10,10,20,0.1);
+	font: "Noto Sans Display 11";
+
+	background-color:            rgba(10,12,14,0.15);
 	transparency: "screenshot";
 	text-color:                  #d3d7cf;
 	selbg:                       #215d9c;
@@ -55,7 +57,7 @@ window {
 }
 
 mainbox {
-	spacing:  0.8em;
+	spacing:  0.3em;
 	children: [ entry,listview,sidebar ];
 }
 
@@ -67,8 +69,8 @@ button selected {
 }
 
 inputbar {
-	padding: 5px;
-	spacing: 5px;
+	padding: 8px;
+	spacing: 8px;
 }
 
 listview {
@@ -77,7 +79,7 @@ listview {
 	cycle:   true;
 }
 
-element { padding: 8px; }
+element { padding: 12px; }
 
 entry {
 	expand:         false;

@@ -69,43 +69,12 @@ source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/abbreviations.zsh
 
 # User configuration
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 export PATH=/home/joseph/.local/bin:~/.npm-global/bin:$PATH
+export npm_config_prefix=~/.npm-global
+export NODE_PATH=~/.npm-global/lib/node_modules/
 
 alias ls="lsd"
-alias lst="ls --tree"
-alias cdds="cd ~/Downloads/shit"
-alias ds="~/Downloads/shit"
 alias cat="bat"
-alias lsg="ls | grep "
-alias hsg="history | grep "
-alias cdctf="cd ~/Libraries/Code/ctf-notes/"
-alias v="vim"
-alias hs="history"
-alias cdln="cd ~/Libraries/Notes/"
-alias cdln="cd ~/Libraries/Code/"
-alias cdu="cd ~/Libraries/uni/"
-alias cdc="cd ~/.config/"
-alias dua="du -ah"
-alias dus="du -sh"
-alias dl="http --download"
-alias vz="v ~/.zshrc"
-alias vabbs="v ~/.config/zsh/abbreviations.zsh"
-alias vi3="v ~/.config/i3/config"
-alias jn="jupyter-notebook"
-alias xc="xclip -selection clipboard"
-alias b64="base64"
-alias b64d="base64 -d"
-alias vfz="vim \"\$(fzf --reverse --inline-info)\""
-alias cfz="cat \"\$(fzf --reverse --inline-info)\""
-alias cdfz="cd \"\$(dirname \"\$(fzf --reverse --inline-info)\")    \""
-alias cpv="rsync -ah --progress"
-alias cdm="cd /run/media/joseph/"
-alias qemu="qemu-system-x86_64"
-alias pi="python -i"
-alias 2dv="2>/dev/null"
-alias _="\"$_\""
-alias ws="~/.config/scripts/walswitch.sh"
-alias cdw="cd ~/Downloads/wallpapers"
-alias pqi="pacman -Qi"
+alias v="$EDITOR"

@@ -22,18 +22,15 @@ abbrevs=(
   "awkp"	"| awk '{print \$__CURSOR__}'"
   "tstamp"	"| while read line; do ; echo \$(date | cut -f4 -d ' ') \$line; done"
   "epoch"	"date +%s"
-  "epochms"	'echo $(($(gdate +%s%N)/1000000))'
+  "epochms"	'echo $(($(date +%s%N)/1000000))'
 )
 
 # Directory aliases
 abbrevs+=(
-  "cdds"	"cd ~/Downloads/shit"
-  "ds"		"~/Downloads/shit"
-  "cdw"		"cd ~/Downloads/wallpapers"
-  "cdctf"	"cd ~/Libraries/Code/ctf-notes/"
-  "cdln"	"cd ~/Libraries/Notes/"
-  "cdlc"	"cd ~/Libraries/Code/"
-  "cdu"		"cd ~/Libraries/uni/"
+  "cdds"	"cd ~/Downloads/shit/"
+  "cdcs"	"cd ~/.config/scripts/"
+  "ds"		"~/Downloads/shit/"
+  "cdw"		"cd ~/Downloads/wallpapers/"
   "cdc"		"cd ~/.config/"
   "cdm"		"cd /run/media/joseph/"
 )
@@ -43,6 +40,7 @@ abbrevs+=(
   "vz"		"v ~/.zshrc"
   "vabbs"	"v ~/.config/zsh/abbreviations.zsh"
   "vi3"		"v ~/.config/i3/config"
+  "vpb"		"v ~/.config/polybar/config"
 )
 
 # git aliases
@@ -68,11 +66,33 @@ abbrevs+=(
   "vfz"		"vim \"\$(fzf --reverse --inline-info)\""
   "cfz"		"cat \"\$(fzf --reverse --inline-info)\""
   "cdfz"	"cd \"\$(dirname \"\$(fzf --reverse --inline-info)\")\""
-  "qemu"	"qemu-system-x86_64"
   "ws"		"~/.config/scripts/walswitch.sh"
   "pqi"		"pacman -Qi"
+  "ac"		"aria2c"
 )
 
+if [[ $PC = 'true' ]]; then
+	abbrevs+=(
+		"was"		"$WASHARED/"
+		"cdwas"		"cd $WASHARED/"
+        "cda"       "cd $WASHARED/anime/"
+        "cdo"       "cd $WASHARED/other/"
+		"cdln"		"cd $WASHARED/notes/"
+		"cdlc"		"cd $WASHARED/code/"
+		"cdu"		"cd $WASHARED/uni/"
+		"cdctf"		"cd $WASHARED/code/ctf-notes/"
+		"cdS"		"cd $WASHARED/shit/"
+		"waS"		"$WASHARED/shit/"
+		"cdU"		"cd /run/media/joseph/Unova/"
+	)
+else
+	abbrevs+=(
+		  "cdctf"	"cd ~/Libraries/Code/ctf-notes/"
+		  "cdln"	"cd ~/Libraries/Notes/"
+		  "cdlc"	"cd ~/Libraries/Code/"
+		  "cdu"		"cd ~/Libraries/uni/"
+	)
+fi
 for abbr in ${(k)abbrevs}; do
   alias $abbr="${abbrevs[$abbr]}"
 done

@@ -86,7 +86,7 @@
 
     ### Text ###
 
-    font = Noto  12
+    font = Cantarell Light 12
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -155,7 +155,7 @@
     hide_duplicate_count = false
 
     # Display indicators for URLs (U) and actions (A).
-    show_indicators = yes
+    show_indicators = no
 
     ### Icons ###
 
@@ -175,7 +175,7 @@
     sticky_history = yes
 
     # Maximum amount of notifications kept in history
-    history_length = 20
+    history_length = 80
 
     ### Misc/Advanced ###
 

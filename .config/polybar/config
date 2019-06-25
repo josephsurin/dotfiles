@@ -1,4 +1,5 @@
-[bar/hellobar]
+[bar/hellobar1]
+monitor = ${env:MONITOR:}
 width = 100%
 height = 34
 radius = 0
@@ -16,7 +17,7 @@ border-size =
 border-color =
 
 padding-left = 4px
-padding-right = 0
+padding-right = 2px
 
 module-margin-left = 1
 module-margin-right = 0
@@ -25,15 +26,42 @@ font-0 = "Noto Sans:size=10;1"
 font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
 font-2 = "Font Awesome 5 Brands:size=10;1"
 
-modules-left = powermenu i3
+modules-left = i3
 modules-center = date
 modules-right = memory cpu temperature pulseaudio wlan eth backlight battery
 
 tray-position = right
-;tray-padding =
 
-cursor-click = pointer
-cursor-scroll = ns-resize
+[bar/hellobar2]
+monitor = ${env:MONITOR:}
+width = 100%
+height = 34
+radius = 0
+fixed-center = true
+
+background = #b6222228
+foreground = #bbb
+
+line-size = 
+line-color =
+
+border-size = 
+border-color =
+
+padding-left = 4px
+padding-right = 4px
+
+module-margin-left = 1
+module-margin-right = 0
+
+font-0 = "Noto Sans:size=10;1"
+font-1 = "Koruri Bold:size=10;1"
+font-2 = "Font Awesome 5 Free:style=Solid:size=10;1"
+font-3 = "Font Awesome 5 Brands:size=10;1"
+
+modules-left = powermenu i3
+modules-center = 
+modules-right = cmus
 
 [module/i3]
 type = internal/i3
@@ -115,7 +143,7 @@ label-muted-underline = #ef5f2f
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp0s20f0u1
 interval = 1.0
 accumulate-stats = true
 format-connected = <ramp-signal><label-connected>
@@ -138,7 +166,7 @@ ramp-signal-4 = 
 
 [module/eth]
 type = internal/network
-interface = wwp0s20u4i6
+interface = enp0s31f6
 interval = 3.0
 
 format-connected-padding = 2
@@ -256,6 +284,24 @@ animation-discharging-2 = 
 animation-discharging-3 = 
 animation-discharging-4 = 
 animation-discharging-framerate = 500
+
+[module/cmus]
+type = custom/script
+
+exec = ~/.config/polybar/cmus.sh
+exec-if = pgrep -x cmus
+interval = 1
+
+click-left = cmus-remote --next
+click-right = cmus-remote --prev
+click-middle = cmus-remote --pause
+scroll-up = cmus-remote --volume +5%
+scroll-down = cmus-remote --volume -5%
+
+label-font = 3
+format = <label>
+label = %output%
+label-maxlen = 150
 
 [settings]
 screenchange-reload = true

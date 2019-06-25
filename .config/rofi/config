@@ -1,4 +1,4 @@
-rofi.combi-modi:	window,drun
+rofi.combi-modi:	drun
 rofi.modi:		combi
 rofi.theme:		sidetab
 rofi.disable-history: false
