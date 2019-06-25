@@ -26,5 +26,6 @@
     },
     "explorer.confirmDragAndDrop": false,
     "guides.enabled": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "window.titleBarStyle": "native"
 }

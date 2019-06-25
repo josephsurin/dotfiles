@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 killall -q polybar
-MONITOR="MONITOR0" polybar --reload hellobar1 &
+MONITOR="LVDS-1" polybar --reload hellobar1 &

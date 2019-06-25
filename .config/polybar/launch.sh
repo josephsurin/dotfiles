@@ -1,1 +1,1 @@
-/home/joseph/.config/polybar/launch.sh##pc
+/home/joseph/.config/polybar/launch.sh##laptop
