@@ -78,3 +78,4 @@ export NODE_PATH=~/.npm-global/lib/node_modules/
 alias ls="lsd"
 alias cat="bat"
 alias v="$EDITOR"
+alias o="xdg-open"
