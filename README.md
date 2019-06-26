@@ -29,6 +29,8 @@ One bar for each monitor:
 
 ## rofi
 
+![rofi.png](.screenshots/rofi.png)
+
 ## vscode
 
 ![code.png](.screenshots/code.png)
