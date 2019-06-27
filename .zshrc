@@ -68,6 +68,11 @@ plugins=(git npm copyfile extract python vi-mode zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/abbreviations.zsh
 
+if [[ $TERM == xterm-termite ]]; then
+  . /etc/profile.d/vte.sh
+  __vte_osc7
+fi
+
 # User configuration
 export EDITOR=nvim
 export VISUAL=nvim
