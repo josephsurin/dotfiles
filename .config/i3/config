@@ -195,7 +195,6 @@ mode "press Enter to reboot" {
 }
 bindsym $mod+Shift+S mode "Lock (L), Exit (E), Reboot (R), Poweroff (D)"
 
-bindsym $mod+i exec --no-startup-id termite -e "$EDITOR $HOME/.config/i3/config"
 bindsym $mod+n exec --no-startup-id notable
 bindsym $mod+Shift+f exec --no-startup-id firefox
 bindsym $mod+o exec --no-startup-id libreoffice
