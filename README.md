@@ -10,6 +10,7 @@ Dotfiles for my Arch Linux systems running on a Thinkpad X230 laptop and a deskt
 - Status Bar: polybar
 - Application Menu: rofi
 - Terminal: termite
+- Display Manager + Greeter: lightdm + lightdm-mini-greeter
 - Text Editors: nvim / vscode
 - Screenshots: maim + xclip
 - Notifications: dunst
@@ -19,6 +20,11 @@ Dotfiles for my Arch Linux systems running on a Thinkpad X230 laptop and a deskt
 - Image Viewers: feh / sxiv
 - Music Player: cmus
 - Colour Generator: pywal (haishoku backend)
+
+## greeter
+This is [my own fork](https://github.com/josephsurin/lightdm-mini-greeter) of [prikhi's](https://github.com/prikhi/lightdm-mini-greeter)
+
+![greeter.jpg](.screenshots/greeter.jpg)
 
 ## polybar
 
