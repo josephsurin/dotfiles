@@ -22,7 +22,7 @@ Dotfiles for my Arch Linux systems running on a Thinkpad X230 laptop and a deskt
 - Colour Generator: pywal (haishoku backend)
 
 ## greeter
-This is [my own fork](https://github.com/josephsurin/lightdm-mini-greeter) of [prikhi's](https://github.com/prikhi/lightdm-mini-greeter)
+This is [my own fork](https://github.com/josephsurin/lightdm-mini-greeter) of [lightdm-mini-greeter](https://github.com/prikhi/lightdm-mini-greeter)
 
 ![greeter.jpg](.screenshots/greeter.jpg)
 
