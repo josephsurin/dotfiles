@@ -28,3 +28,4 @@ application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
 pdf=./org.pwmt.zathura.desktop
 x-scheme-handler/mailspring=mailspring.desktop
+application/pdf=org.pwmt.zathura.desktop
