@@ -70,6 +70,7 @@ abbrevs+=(
   "ws"		"~/.config/scripts/walswitch.sh"
   "pqi"		"pacman -Qi"
   "ac"		"aria2c"
+  "htl"     "heroku logs --tail"
 )
 
 if [[ $PC = 'true' ]]; then

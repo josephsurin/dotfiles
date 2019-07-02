@@ -38,8 +38,10 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 call plug#end()
 
-syntax on
 let g:airline_theme='bubblegum'
+
+" syntax highlighting
+syntax on
 
 " vim multiple cursor keybinds
 let g:multi_cursor_use_default_mapping=0
