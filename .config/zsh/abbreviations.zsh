@@ -73,6 +73,11 @@ abbrevs+=(
   "htl"     "heroku logs --tail"
 )
 
+ofz() {
+    p=$(fzf)
+    xdg-open "$p" &! exit
+}
+
 if [[ $PC = 'true' ]]; then
 	abbrevs+=(
 		"was"		"$WASHARED/"
