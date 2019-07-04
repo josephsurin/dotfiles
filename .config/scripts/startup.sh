@@ -9,6 +9,8 @@ then
 #	$HOME/.config/scripts/adjust_wacom.sh &
 	mailspring -b &
 	termite -e cmus &
+    # firefox home page
+    python -m http.server --directory "$WASHARED/other/dome" 4663 &
 fi
 
 # wait for network to connect ...
