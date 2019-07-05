@@ -121,9 +121,10 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+workspace $wss output VGA-0
 bindsym $mod+u workspace $wss
 bindsym $mod+Shift+Left workspace prev
-bindsym $mod+Shift+Right workspace nek
+bindsym $mod+Shift+Right workspace next
 bindsym $mod+Mod1+h workspace prev
 bindsym $mod+Mod1+l workspace next
 bindsym $mod+Tab workspace back_and_forth
