@@ -108,6 +108,7 @@ set $ws7 "7. "
 set $ws8 "8. "
 set $ws9 "9. "
 set $ws10 "10. "
+set $wss "11. "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -120,8 +121,9 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
+bindsym $mod+u workspace $wss
 bindsym $mod+Shift+Left workspace prev
-bindsym $mod+Shift+Right workspace next
+bindsym $mod+Shift+Right workspace nek
 bindsym $mod+Mod1+h workspace prev
 bindsym $mod+Mod1+l workspace next
 bindsym $mod+Tab workspace back_and_forth
@@ -374,6 +376,7 @@ mode "$mouse" {
 for_window [title=" - AzPainter$"] border none
 assign [class="discord"] 2. 
 assign [class="cmus"] 1. 
+assign [class="krita"] 11. 
 exec --no-startup-id $HOME/.config/scripts/startup.sh
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
