@@ -112,7 +112,9 @@ set $wss "11. "
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
+workspace $ws1 output VGA-0
 bindsym $mod+2 workspace $ws2
+workspace $ws2 output DVI-D-0
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
