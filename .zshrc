@@ -63,7 +63,7 @@ HIST_STAMPS="%d/%m/%Y %T"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git npm copyfile extract python vi-mode zsh-syntax-highlighting)
+plugins=(git npm copyfile extract python vi-mode zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/abbreviations.zsh
