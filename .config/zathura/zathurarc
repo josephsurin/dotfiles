@@ -30,7 +30,7 @@ set notification-bg             "#90A959" #0B
 set notification-fg             "#151515" #00
 
 set recolor-lightcolor          "#151515" #00
-set recolor-darkcolor           "#E0E0E0" #06
+set recolor-darkcolor           "#B0B0B0" #06
 set recolor                     "true"
 
 # setting recolor-keep true will keep any color your pdf has.
