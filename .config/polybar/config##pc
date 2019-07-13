@@ -1,7 +1,7 @@
 [bar/hellobar1]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 34
+height = 30
 radius = 0
 fixed-center = true
 
@@ -28,14 +28,14 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3
 modules-center = date
-modules-right = memory cpu temperature pulseaudio wlan eth backlight battery
+modules-right = memory cpu temperature pulseaudio wlan eth vnstat backlight battery
 
 tray-position = right
 
 [bar/hellobar2]
 monitor = ${env:MONITOR:}
 width = 100%
-height = 34
+height = 30
 radius = 0
 fixed-center = true
 
@@ -302,6 +302,15 @@ label-font = 3
 format = <label>
 label = %output%
 label-maxlen = 150
+
+[module/vnstat]
+type = custom/script
+exec = ~/.config/polybar/vnstat.sh
+exec-if = pgrep vnstat
+interval = 120
+
+format =  <label>
+label = %output%
 
 [settings]
 screenchange-reload = true
