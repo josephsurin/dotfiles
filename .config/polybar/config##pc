@@ -311,6 +311,10 @@ interval = 120
 
 format =  <label>
 label = %output%
+click-left = vnstati -s -o - | feh -F -
+click-right = vnstati -d -o - | feh -F -
+click-middle = vnstati -h -o - | feh -F -
+
 
 [settings]
 screenchange-reload = true
