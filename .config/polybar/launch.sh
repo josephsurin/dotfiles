@@ -1,1 +1,0 @@
-/home/joseph/.config/polybar/launch.sh##pc
