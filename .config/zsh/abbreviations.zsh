@@ -71,6 +71,7 @@ abbrevs+=(
   "pqi"		"pacman -Qi"
   "ac"		"aria2c"
   "htl"     "heroku logs --tail"
+  "rs"      "redshift -O 4000 -b 0.7"
 )
 
 ofz() {
