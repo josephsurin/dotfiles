@@ -22,6 +22,10 @@ set number
 
 " PLUGINS
 call plug#begin('~/.local/share/nvim/plugged')
+" Plug 'morhetz/gruvbox'
+" Plug 'crusoexia/vim-monokai'
+" Plug 'joshdick/onedark.vim'
+" Plug 'liuchengxu/space-vim-dark'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
@@ -38,8 +42,6 @@ set completeopt=noinsert,menuone,noselect
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
 call plug#end()
-
-let g:airline_theme='bubblegum'
 
 " syntax highlighting
 syntax on
@@ -61,3 +63,10 @@ let g:EasyMotion_smartcase = 1
 nmap s <Plug>(easymotion-s2)
 map fj <Plug>(easymotion-j)
 map fk <Plug>(easymotion-k)
+
+" colorscheme and airline theme
+" colorscheme gruvbox
+" let g:airline_theme='gruvbox'
+let g:airline_theme='bubblegum'
+hi Normal guibg=NONE ctermbg=NONE
+hi Comment cterm=italic
