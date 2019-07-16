@@ -28,12 +28,11 @@ abbrevs=(
 
 # Directory aliases
 abbrevs+=(
-  "cdds"	"cd ~/Downloads/shit/"
-  "cdcs"	"cd ~/.config/scripts/"
-  "ds"		"~/Downloads/shit/"
-  "cdw"		"cd ~/Downloads/wallpapers/"
-  "cdc"		"cd ~/.config/"
-  "cdm"		"cd /run/media/joseph/"
+  "cdds"	"~/Downloads/shit/"
+  "cdcs"	"~/.config/scripts/"
+  "cdw"		"~/Downloads/wallpapers/"
+  "cdc"		"~/.config/"
+  "cdm"		"/run/media/joseph/"
 )
 
 # File aliases
@@ -75,7 +74,7 @@ abbrevs+=(
 )
 
 ofz() {
-    p=$(fzf)
+    p=$(fzf --reverse --inline-info)
     xdg-open "$p" &! exit
 }
 
@@ -85,16 +84,14 @@ tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | s
 if [[ $PC = 'true' ]]; then
 	abbrevs+=(
 		"was"		"$WASHARED/"
-		"cdwas"		"cd $WASHARED/"
-        "cda"       "cd $WASHARED/anime/"
-        "cdo"       "cd $WASHARED/other/"
-		"cdln"		"cd $WASHARED/notes/"
-		"cdlc"		"cd $WASHARED/code/"
-		"cdu"		"cd $WASHARED/uni/"
-		"cdctf"		"cd $WASHARED/code/ctf-notes/"
-		"cdS"		"cd $WASHARED/shit/"
-		"waS"		"$WASHARED/shit/"
-		"cdU"		"cd /run/media/joseph/Unova/"
+        "cda"       "$WASHARED/anime/"
+        "cdo"       "$WASHARED/other/"
+		"cdln"		"$WASHARED/notes/"
+		"cdlc"		"$WASHARED/code/"
+		"cdu"		"$WASHARED/uni/"
+		"cdctf"		"$WASHARED/code/ctf-notes/"
+		"cdS"		"$WASHARED/shit/"
+		"cdU"		"/run/media/joseph/Unova/"
 	)
 else
 	abbrevs+=(
