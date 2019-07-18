@@ -29,6 +29,7 @@ abbrevs=(
 # Directory aliases
 abbrevs+=(
   "cdds"	"~/Downloads/shit/"
+  "ds"      "~/Downloads/shit/"
   "cdcs"	"~/.config/scripts/"
   "cdw"		"~/Downloads/wallpapers/"
   "cdc"		"~/.config/"
