@@ -13,6 +13,7 @@ abbrevs=(
   "lsth"	"ls -t | head -n 10"
   "mdc"		"mkdir -p __CURSOR__ && cd \$_"
   "dua"		"du -ah"
+  "dv"      "dirs -v"
   "_"		"\"\$_\""
   "dus"		"du -sh"
   "openc"   "xdg-open __CURSOR__ & disown && exit"
