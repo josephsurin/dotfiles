@@ -97,10 +97,10 @@ if [[ $PC = 'true' ]]; then
 	)
 else
 	abbrevs+=(
-		  "cdctf"	"cd ~/Libraries/Code/ctf-notes/"
-		  "cdln"	"cd ~/Libraries/Notes/"
-		  "cdlc"	"cd ~/Libraries/Code/"
-		  "cdu"		"cd ~/Libraries/uni/"
+		  "cdctf"	"~/Libraries/Code/ctf-notes/"
+		  "cdln"	"~/Libraries/Notes/"
+		  "cdlc"	"~/Libraries/Code/"
+		  "cdu"		"~/Libraries/uni/"
 	)
 fi
 for abbr in ${(k)abbrevs}; do
