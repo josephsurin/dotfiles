@@ -100,7 +100,7 @@ else
 		  "cdctf"	"~/Libraries/Code/ctf-notes/"
 		  "cdln"	"~/Libraries/Notes/"
 		  "cdlc"	"~/Libraries/Code/"
-		  "cdu"		"~/Libraries/uni/"
+		  "cdu"		"/run/media/joseph/white64/uni"
 	)
 fi
 for abbr in ${(k)abbrevs}; do

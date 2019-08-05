@@ -183,10 +183,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $powermenutitle "Lock (L), Exit(E), Reboot (R), Poweroff (D)"
+set $powermenutitle "Monitor (M), Lock (L), Exit(E), Reboot (R), Poweroff (D)"
 
 mode $powermenutitle  {
 	bindsym Escape mode "default"
+    bindsym M exec --no-startup-id xset dpms force off
 	bindsym L exec --no-startup-id i3-msg mode "default" && betterlockscreen -l dimblur
 	bindsym E exec i3-msg exit
 	bindsym R mode "press Enter to reboot"
