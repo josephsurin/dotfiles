@@ -25,6 +25,7 @@ abbrevs=(
   "tstamp"	"| while read line; do ; echo \$(date | cut -f4 -d ' ') \$line; done"
   "epoch"	"date +%s"
   "epochms"	'echo $(($(date +%s%N)/1000000))'
+  "stripansi" "sed 's/\x1b\[[0-9;]*m//g'"
 )
 
 # Directory aliases
