@@ -16,7 +16,7 @@ abbrevs=(
   "dv"      "dirs -v"
   "_"		"\"\$_\""
   "dus"		"du -sh"
-  "openc"   "xdg-open __CURSOR__ & disown && exit"
+  "openc"   "mimeo __CURSOR__ & disown && exit"
   "cpv"		"rsync -ah --progress"
   "2dv"		"2>/dev/null"
   "fdg"		"find . | grep"

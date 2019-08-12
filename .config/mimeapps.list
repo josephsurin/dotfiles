@@ -29,3 +29,5 @@ application/x-extension-xht=firefox.desktop
 pdf=./org.pwmt.zathura.desktop
 x-scheme-handler/mailspring=mailspring.desktop
 application/pdf=org.pwmt.zathura.desktop
+doc=libreoffice-writer.desktop
+docx=libreoffice-writer.desktop
