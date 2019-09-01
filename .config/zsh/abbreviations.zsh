@@ -76,6 +76,10 @@ abbrevs+=(
   "rs"      "redshift -O 4000 -b 0.7"
 )
 
+weather() {
+    http v2.wttr.in 
+}
+
 ofz() {
     p=$(fzf --reverse --inline-info)
     xdg-open "$p" &! exit
