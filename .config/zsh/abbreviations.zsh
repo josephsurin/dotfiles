@@ -82,7 +82,7 @@ weather() {
 
 ofz() {
     p=$(fzf --reverse --inline-info)
-    xdg-open "$p" &! exit
+    mimeo "$p" &! exit
 }
 
 transfer() { if [ $# -eq 0 ]; then echo -e "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
