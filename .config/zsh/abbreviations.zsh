@@ -44,6 +44,7 @@ abbrevs+=(
   "vabbs"	"v ~/.config/zsh/abbreviations.zsh"
   "vi3"		"v ~/.config/i3/config"
   "vpb"		"v ~/.config/polybar/config"
+  "vd"      "v $WASHARED/other/diary.txt"
 )
 
 # git aliases
