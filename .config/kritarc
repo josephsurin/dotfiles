@@ -2,13 +2,13 @@ AlsoSaveAsKra=false
 AntialiasSelectionOutline=false
 ArtColorSel.ColorSpace=0
 ArtColorSel.InversedSaturation=false
-ArtColorSel.Light=0.949993381459379
+ArtColorSel.Light=0.11546943729446527
 ArtColorSel.LightPieces=11
 ArtColorSel.NumRings=7
 ArtColorSel.RingPieces=12
-ArtColorSel.SelColorH=0
-ArtColorSel.SelColorS=0.1857550745545247
-ArtColorSel.SelColorX=0.949993381459379
+ArtColorSel.SelColorH=0.6666666666666666
+ArtColorSel.SelColorS=0.009543846814060286
+ArtColorSel.SelColorX=0.11546943729446527
 ArtColorSel.defaultHueSteps=12
 ArtColorSel.defaultSaturationSteps=7
 ArtColorSel.defaultValueScaleSteps=11
@@ -38,8 +38,8 @@ KineticScrollingGesture=2
 KineticScrollingHideScrollbar=false
 KineticScrollingSensitivity=75
 KisDlgPreferences/CurrentPage=canvasinput
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB g="0.0901960805058479" b="0.0980392172932625" space="sRGB-elle-V2-srgbtrc.icc" r="0.0901960805058479"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB g="0.949019610881805" b="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc" r="0.960784316062927"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB g="0.949019610881805" r="0.960784316062927" b="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB g="0.0901960805058479" r="0.0901960805058479" b="0.0980392172932625" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
 LastPreset=b)_Basic-1
 LineSmoothingDelayDistance=50
 LineSmoothingDistance=50
@@ -144,8 +144,8 @@ memorySoftLimitPercent=2
 monitorProfile=sRGB-elle-V2-srgbtrc.icc
 monitorProfile/OverrideX11=false
 monitorProfile_1=sRGB-elle-V2-srgbtrc.icc
-moveToolChangedValueX=574
-moveToolChangedValueY=699
+moveToolChangedValueX=74
+moveToolChangedValueY=10
 moveToolUnit=0
 newCursorStyle=0
 newOutlineStyle=2
@@ -561,7 +561,7 @@ yPosition=17
 
 [RecentFiles]
 File1[$e]=/media/winarch-shared/uni/COMP10002 Foundations of Algorithms/Past Exams/2019 Sem 1 Sample Mid Sem Test 2/page-2.jpg
-File10[$e]=/media/winarch-shared/uni/MAST20026 Real Analysis/Assignments/Assignment_4/assn.kra
+File10[$e]=/media/winarch-shared/uni/MAST20026 Real Analysis/problem_booklet.kra
 File2[$e]=/media/winarch-shared/uni/COMP10002 Foundations of Algorithms/Past Exams/2019 Sem 1 Sample Mid Sem Test 2/test.kra
 File3[$e]=/media/winarch-shared/uni/COMP10002 Foundations of Algorithms/Past Exams/2019 Sem 1 Sample Mid Sem Test 3/page-0.jpg
 File4[$e]=/media/winarch-shared/uni/COMP10002 Foundations of Algorithms/Past Exams/2019 Sem 1 Sample Mid Sem Test 3/page-1.jpg
@@ -569,9 +569,9 @@ File5[$e]=/media/winarch-shared/uni/COMP10002 Foundations of Algorithms/Past Exa
 File6[$e]=/media/winarch-shared/uni/COMP10002 Foundations of Algorithms/Past Exams/2019 Sem 1 Sample Mid Sem Test 3/test.kra
 File7[$e]=/media/winarch-shared/uni/MAST20026 Real Analysis/Assignments/Assignment_1/assn.kra
 File8[$e]=/media/winarch-shared/uni/MAST20026 Real Analysis/Assignments/Assignment_3/assn.kra
-File9[$e]=/media/winarch-shared/uni/MAST20026 Real Analysis/problem_booklet.kra
+File9[$e]=/media/winarch-shared/uni/MAST20026 Real Analysis/Assignments/Assignment_4/assn.kra
 Name1[$e]=page-2.jpg
-Name10[$e]=assn.kra
+Name10[$e]=problem_booklet.kra
 Name2[$e]=test.kra
 Name3[$e]=page-0.jpg
 Name4[$e]=page-1.jpg
@@ -579,7 +579,7 @@ Name5[$e]=page-2.jpg
 Name6[$e]=test.kra
 Name7[$e]=assn.kra
 Name8[$e]=assn.kra
-Name9[$e]=problem_booklet.kra
+Name9[$e]=assn.kra
 maxRecentFileItems=100
 
 [SvgSymbolCollection]
