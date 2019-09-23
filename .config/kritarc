@@ -2,13 +2,13 @@ AlsoSaveAsKra=false
 AntialiasSelectionOutline=false
 ArtColorSel.ColorSpace=0
 ArtColorSel.InversedSaturation=false
-ArtColorSel.Light=0.949993381459379
+ArtColorSel.Light=0.11546943729446527
 ArtColorSel.LightPieces=11
 ArtColorSel.NumRings=7
 ArtColorSel.RingPieces=12
-ArtColorSel.SelColorH=0
-ArtColorSel.SelColorS=0.1857550745545247
-ArtColorSel.SelColorX=0.949993381459379
+ArtColorSel.SelColorH=0.6666666666666666
+ArtColorSel.SelColorS=0.009543846814060286
+ArtColorSel.SelColorX=0.11546943729446527
 ArtColorSel.defaultHueSteps=12
 ArtColorSel.defaultSaturationSteps=7
 ArtColorSel.defaultValueScaleSteps=11
@@ -38,8 +38,8 @@ KineticScrollingGesture=2
 KineticScrollingHideScrollbar=false
 KineticScrollingSensitivity=75
 KisDlgPreferences/CurrentPage=canvasinput
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="0.0980392172932625" r="0.0901960805058479" g="0.0901960805058479" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="0.949019610881805" r="0.960784316062927" g="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="0.960784316062927" b="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc" g="0.949019610881805"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="0.0901960805058479" b="0.0980392172932625" space="sRGB-elle-V2-srgbtrc.icc" g="0.0901960805058479"/>\n</LastForeGroundColor>\n
 LastPreset=b)_Basic-1
 LineSmoothingDelayDistance=50
 LineSmoothingDistance=50
@@ -144,8 +144,8 @@ memorySoftLimitPercent=2
 monitorProfile=sRGB-elle-V2-srgbtrc.icc
 monitorProfile/OverrideX11=false
 monitorProfile_1=sRGB-elle-V2-srgbtrc.icc
-moveToolChangedValueX=534
-moveToolChangedValueY=497
+moveToolChangedValueX=-170
+moveToolChangedValueY=861
 moveToolUnit=0
 newCursorStyle=0
 newOutlineStyle=2
