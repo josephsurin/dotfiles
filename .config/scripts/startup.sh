@@ -13,5 +13,6 @@ fi
 # wait for network to connect ...
 sleep 2
 discord &
+slack &
 notable &
 anki &

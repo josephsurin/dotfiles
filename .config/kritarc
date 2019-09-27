@@ -37,10 +37,10 @@ KineticScrollingEnabled=true
 KineticScrollingGesture=2
 KineticScrollingHideScrollbar=false
 KineticScrollingSensitivity=75
-KisDlgPreferences/CurrentPage=canvasinput
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB r="0.960784316062927" b="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc" g="0.949019610881805"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB r="0.0901960805058479" b="0.0980392172932625" space="sRGB-elle-V2-srgbtrc.icc" g="0.0901960805058479"/>\n</LastForeGroundColor>\n
-LastPreset=b)_Basic-1
+KisDlgPreferences/CurrentPage=tablet
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="0.949019610881805" g="0.949019610881805" space="sRGB-elle-V2-srgbtrc.icc" r="0.960784316062927"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="0.0980392172932625" g="0.0901960805058479" space="sRGB-elle-V2-srgbtrc.icc" r="0.0901960805058479"/>\n</LastForeGroundColor>\n
+LastPreset=b)_Basic-5_Size
 LineSmoothingDelayDistance=50
 LineSmoothingDistance=50
 LineSmoothingFinishStabilizedCurve=true
@@ -135,7 +135,7 @@ levelOfDetailEnabled=false
 logviewer_enabled=false
 maxSwapSize=4096
 maximumBrushSize=1000
-mdiBackgroundColorXML=<!DOCTYPE color>\n<color channeldepth="U16">\n <RGB b="0.301960796117783" g="0.301960796117783" r="0.301960796117783" space="sRGB-elle-V2-srgbtrc.icc"/>\n</color>\n
+mdiBackgroundColorXML=<!DOCTYPE color>\n<color channeldepth="U16">\n <RGB b="0.301960796117783" g="0.301960796117783" space="sRGB-elle-V2-srgbtrc.icc" r="0.301960796117783"/>\n</color>\n
 mdiBackgroundImage=
 mdi_viewmode=1
 memoryHardLimitPercent=50
@@ -144,8 +144,8 @@ memorySoftLimitPercent=2
 monitorProfile=sRGB-elle-V2-srgbtrc.icc
 monitorProfile/OverrideX11=false
 monitorProfile_1=sRGB-elle-V2-srgbtrc.icc
-moveToolChangedValueX=-170
-moveToolChangedValueY=861
+moveToolChangedValueX=54
+moveToolChangedValueY=70
 moveToolUnit=0
 newCursorStyle=0
 newOutlineStyle=2
@@ -216,7 +216,7 @@ showSingleChannelAsColor=false
 showStatusBar=false
 swaplocation=/tmp
 switchSelectionCtrlAlt=false
-tabletPressureCurve=0,0;1,1;
+tabletPressureCurve=0,0;0.197266,0.425703;1,1;
 toolbarslider_1=opacity
 toolbarslider_2=size
 toolbarslider_3=flow
