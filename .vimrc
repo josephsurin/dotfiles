@@ -20,6 +20,9 @@ nnoremap <C-k> <C-u>
 highlight LineNr ctermfg=grey
 set number
 
+" max 80 chars per line
+set colorcolumn=80
+
 " PLUGINS
 call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'morhetz/gruvbox'
@@ -70,3 +73,9 @@ map fk <Plug>(easymotion-k)
 let g:airline_theme='bubblegum'
 hi Normal guibg=NONE ctermbg=NONE
 hi Comment cterm=italic
+
+function! Snp(s)
+    exe 'r' . '~/.vim/snippets/' . a:s
+endfunction
+
+command! -nargs=1 Snip call Snp(<q-args>)
