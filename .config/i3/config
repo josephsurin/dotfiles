@@ -390,5 +390,5 @@ exec --no-startup-id nm-applet
 exec --no-startup-id udiskie --smart-tray
 exec_always --no-startup-id dunst
 exec_always --no-startup-id compton
-exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w kleg1.jpg
+exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w hw65234.jpg
 exec --no-startup-id ibus-daemon -drx
