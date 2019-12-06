@@ -390,6 +390,7 @@ for_window [title=" - AzPainter$"] border none
 for_window [title="^stickers$"] floating enable
 assign [title="^stickers$"] $ws2
 assign [class="discord"] $ws2
+assign [class="telegram-desktop"] $ws2
 assign [class="cmus"] $ws1
 assign [class="krita"] $wss
 assign [class="Anki"] $ws9

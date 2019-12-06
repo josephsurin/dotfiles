@@ -6,6 +6,7 @@ KritaFill/KisToolFill=G
 KritaFill/KisToolGradient=none
 KritaSelected/KisToolColorPicker=Y
 KritaTransform/KisToolMove=V
+SvgTextTool=T
 activateNextLayer=Shift+K
 activatePreviousLayer=Shift+J
 add_new_paint_layer=Shift+N
