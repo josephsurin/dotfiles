@@ -44,6 +44,7 @@ Plug 'rust-lang/rust.vim'
 set completeopt=noinsert,menuone,noselect
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
+Plug 'lervag/vimtex'
 call plug#end()
 
 " syntax highlighting
