@@ -55,6 +55,9 @@ alias cat="bat"
 alias v="$EDITOR"
 alias o="mimeo"
 alias rm="rm -I"
+alias :q="exit"
+alias :wq="exit"
+alias h="http"
 
 HISTSIZE=100000000
 HISTFILESIZE=100000000

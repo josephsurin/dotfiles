@@ -13,6 +13,7 @@ application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=vim.desktop;firefox.desktop;
 application/octet-stream=vim.desktop;firefox.desktop;
+application/zip=nvim.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

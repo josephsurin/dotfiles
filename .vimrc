@@ -29,6 +29,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'crusoexia/vim-monokai'
 " Plug 'joshdick/onedark.vim'
 " Plug 'liuchengxu/space-vim-dark'
+Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
@@ -44,6 +45,7 @@ Plug 'rust-lang/rust.vim'
 set completeopt=noinsert,menuone,noselect
 Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-path'
+Plug 'lervag/vimtex'
 call plug#end()
 
 " syntax highlighting

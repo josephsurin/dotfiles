@@ -13,6 +13,7 @@ fi
 # wait for network to connect ...
 sleep 2
 discord &
-slack &
+telegram-desktop -startintray &
+slack -u &
 notable &
 anki &
