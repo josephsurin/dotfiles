@@ -77,6 +77,10 @@ abbrevs+=(
   "rs"      "redshift -O 4000 -b 0.7"
 )
 
+racki() {
+    racket -il xrepl -e "(require \"$1\")"
+}
+
 weather() {
     http v2.wttr.in 
 }
