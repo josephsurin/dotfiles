@@ -40,6 +40,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ncm2/ncm2'
 Plug 'tpope/vim-haml'
+Plug 'wlangstroth/vim-racket'
 Plug 'roxma/nvim-yarp'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'rust-lang/rust.vim'
