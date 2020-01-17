@@ -207,7 +207,6 @@ bindsym $mod+Shift+S mode $powermenutitle
 # program shortcuts
 bindsym $mod+n exec --no-startup-id notable
 bindsym $mod+Shift+f exec --no-startup-id firefox
-bindsym $mod+o exec --no-startup-id libreoffice
 bindsym $mod+e exec --no-startup-id termite -e "ranger"
 bindsym $mod+p exec --no-startup-id termite -e "python"
 bindsym $mod+c exec ~/.config/scripts/stickers.sh
@@ -402,5 +401,5 @@ exec --no-startup-id nm-applet
 exec --no-startup-id udiskie --smart-tray
 exec_always --no-startup-id dunst
 exec_always --no-startup-id compton
-exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w hw65234.jpg
+exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w kleg1.jpg
 exec --no-startup-id ibus-daemon -drx
