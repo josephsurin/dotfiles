@@ -5,6 +5,7 @@ KisToolSelectSimilar=I
 KritaFill/KisToolFill=G
 KritaFill/KisToolGradient=none
 KritaSelected/KisToolColorPicker=Y
+KritaShape/KisToolRectangle=Ctrl+R
 KritaTransform/KisToolMove=V
 SvgTextTool=T
 activateNextLayer=Shift+K
