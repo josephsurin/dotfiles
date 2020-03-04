@@ -15,6 +15,7 @@ application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=vim.desktop;fi
 application/octet-stream=vim.desktop;firefox.desktop;
 application/zip=nvim.desktop;
 text/x-python=nvim.desktop;
+application/javascript=vim.desktop;nvim.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
