@@ -2,7 +2,7 @@ setopt extendedglob
 
 typeset -A abbrevs
 
-# General aliases
+# General aliases 1
 abbrevs=(
   "ll"		"ls -al"
   "l1"		"ls -1"
@@ -21,11 +21,16 @@ abbrevs=(
   "2dv"		"2>/dev/null"
   "fdg"		"find . | grep"
   "pgr"		"| grep"
-  "awkp"	"| awk '{print \$__CURSOR__}'"
   "tstamp"	"| while read line; do ; echo \$(date | cut -f4 -d ' ') \$line; done"
   "epoch"	"date +%s"
   "epochms"	'echo $(($(date +%s%N)/1000000))'
   "stripansi" "sed 's/\x1b\[[0-9;]*m//g'"
+)
+
+# General aliases 2
+abbrevs+=(
+  "awkp"	"| awk '{print \$__CURSOR__}'"
+  "trnl"    "awk 'length(\$0) > 0'"
 )
 
 # Directory aliases
@@ -75,6 +80,12 @@ abbrevs+=(
   "ac"		"aria2c"
   "htl"     "heroku logs --tail"
   "rs"      "redshift -O 4000 -b 0.7"
+  "tsh"     "tshark -r"
+)
+
+# SSH aliases
+abbrevs+=(
+  "thonk"   "ssh josep@thonkstonks.hopto.org"
 )
 
 racki() {

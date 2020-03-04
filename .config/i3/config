@@ -205,7 +205,6 @@ mode "press Enter to poweroff" {
 bindsym $mod+Shift+S mode $powermenutitle
 
 # program shortcuts
-bindsym $mod+n exec --no-startup-id notable
 bindsym $mod+Shift+f exec --no-startup-id firefox
 bindsym $mod+e exec --no-startup-id termite -e "ranger"
 bindsym $mod+p exec --no-startup-id termite -e "python"
@@ -394,6 +393,7 @@ assign [class="cmus"] $ws1
 assign [class="krita"] $wss
 assign [class="Anki"] $ws9
 assign [class="Notable"] $ws10
+assign [class="calcurse"] $ws10
 exec --no-startup-id $HOME/.config/scripts/startup.sh
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

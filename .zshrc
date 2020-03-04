@@ -46,7 +46,7 @@ compinit
 # User configuration
 export EDITOR=nvim
 export VISUAL=nvim
-export PATH=/home/joseph/.local/bin:~/.npm-global/bin:/home/joseph/.gem/ruby/2.6.0/bin/:$PATH
+export PATH=/usr/lib/jvm/java-13-openjdk/bin/:/home/joseph/.local/bin:~/.npm-global/bin:/home/joseph/.gem/ruby/2.6.0/bin/:$PATH
 export npm_config_prefix=~/.npm-global
 export NODE_PATH=~/.npm-global/lib/node_modules/:~/.config/yarn/global/node_modules/
 

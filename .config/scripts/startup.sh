@@ -10,10 +10,11 @@ then
     python -m http.server --directory "$WASHARED/other/dome" 4663 &
 fi
 
+termite -e calcurse &
 # wait for network to connect ...
 sleep 2
 discord &
 telegram-desktop -startintray &
-slack -u &
-notable &
-anki &
+#slack -u &
+#notable &
+# anki &
