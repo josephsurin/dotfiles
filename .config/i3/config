@@ -392,7 +392,6 @@ assign [class="telegram-desktop"] $ws2
 assign [class="cmus"] $ws1
 assign [class="krita"] $wss
 assign [class="Anki"] $ws9
-assign [class="Notable"] $ws10
 assign [class="calcurse"] $ws10
 exec --no-startup-id $HOME/.config/scripts/startup.sh
 
