@@ -16,6 +16,7 @@ application/octet-stream=vim.desktop;firefox.desktop;
 application/zip=nvim.desktop;
 text/x-python=nvim.desktop;
 application/javascript=vim.desktop;nvim.desktop;
+text/plain=nvim.desktop;firefox.desktop;
 text/plain=firefox.desktop;
 binary/octet-stream=.hide-nvim.desktop;
 
