@@ -41,6 +41,7 @@ abbrevs+=(
   "cdw"		"~/Downloads/wallpapers/"
   "cdc"		"~/.config/"
   "cdm"		"/run/media/joseph/"
+  "cdb"     "/media/winarch-shared/books/"
 )
 
 # File aliases

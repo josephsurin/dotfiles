@@ -1,6 +1,0 @@
-"$HOME/.config/scripts/region_capture.sh"
-m:0x0 + b:8
-"xdotool key ctrl+v"
-m:0x0 + b:9
-"$HOME/.config/scripts/middle_scroll.sh"
-Shift + m:0x0 + b:2
