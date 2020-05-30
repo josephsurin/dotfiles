@@ -58,6 +58,7 @@ alias rm="rm -I"
 alias :q="exit"
 alias :wq="exit"
 alias h="http"
+alias genpw="python -c 'import random; import string; print(\"\".join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for _ in range(28)))'"
 
 HISTSIZE=100000000
 HISTFILESIZE=100000000

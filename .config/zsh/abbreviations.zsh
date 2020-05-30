@@ -25,6 +25,7 @@ abbrevs=(
   "epoch"	"date +%s"
   "epochms"	'echo $(($(date +%s%N)/1000000))'
   "stripansi" "sed 's/\x1b\[[0-9;]*m//g'"
+  "tfont"     "setfont /usr/share/kbd/consolefonts/ter-118b.psf.gz"
 )
 
 # General aliases 2
@@ -86,7 +87,7 @@ abbrevs+=(
 
 # SSH aliases
 abbrevs+=(
-  "thonk"   "ssh josep@thonkstonks.hopto.org"
+  "thonk"   "ssh josep@xnith.xyz"
 )
 
 racki() {
