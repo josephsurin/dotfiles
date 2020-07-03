@@ -9,6 +9,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+set $term alacritty
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -30,7 +32,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -206,8 +208,8 @@ bindsym $mod+Shift+S mode $powermenutitle
 
 # program shortcuts
 bindsym $mod+Shift+f exec --no-startup-id firefox
-bindsym $mod+e exec --no-startup-id termite -e "ranger"
-bindsym $mod+p exec --no-startup-id termite -e "python"
+bindsym $mod+e exec --no-startup-id $term -e "ranger"
+bindsym $mod+p exec --no-startup-id $term -e "python"
 bindsym $mod+c exec ~/.config/scripts/stickers.sh
 
 # screenshot commands

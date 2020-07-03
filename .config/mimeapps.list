@@ -1,5 +1,5 @@
 [Added Associations]
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+application/pdf=firefox.desktop;org.pwmt.zathura-pdf-mupdf.desktop;
 x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/ftp=firefox.desktop;
@@ -14,11 +14,13 @@ application/x-extension-xht=firefox.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=vim.desktop;firefox.desktop;
 application/octet-stream=vim.desktop;firefox.desktop;
 application/zip=nvim.desktop;
-text/x-python=nvim.desktop;
+text/x-python=nvim.desktop;firefox.desktop;
 application/javascript=vim.desktop;nvim.desktop;
 text/plain=nvim.desktop;firefox.desktop;
 text/plain=firefox.desktop;
 binary/octet-stream=.hide-nvim.desktop;
+image/png=sxiv.desktop;feh.desktop;
+image/jpeg=feh.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

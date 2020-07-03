@@ -5,7 +5,7 @@ height = 34
 radius = 0
 fixed-center = true
 
-background = #b6222228
+background = #131320
 #background = #a9313542
 #foreground = #657b83
 foreground = #bbb
@@ -76,7 +76,7 @@ label-mode-background = #272827
 label-focused = %name%
 #label-focused-background = #85eaf2
 label-focused-underline = #5eddea
-label-focused-foreground = #85eaf2
+label-focused-foreground = #ddd
 label-focused-padding = 2
 
 label-empty = %name%
@@ -85,7 +85,7 @@ label-empty-padding = 2
 
 label-unfocused = %name%
 #label-unfocused-background = #7E807E
-label-unfocused-foreground = #aaa
+label-unfocused-foreground = #44aaaaaa
 label-unfocused-padding = 2
 
 label-visible = %name%

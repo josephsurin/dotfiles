@@ -85,7 +85,8 @@ abbrevs+=(
 
 # SSH aliases
 abbrevs+=(
-  "thonk"   "ssh josep@thonkstonks.hopto.org"
+  "thonk"   "ssh josep@xnith.xyz",
+  "sshhome" "ssh joseph@ssh.josephsurin.me -p 2222"
 )
 
 racki() {

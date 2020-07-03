@@ -32,6 +32,7 @@ show_color_history=none
 show_minimal_shade_selector=none
 show_snap_options_popup=none
 toggle_fg_bg=Shift+X
+toggle_layer_visibility=Shift+H
 undo_polygon_selection=none
 view_zoom_in=Shift+A
 view_zoom_out=Shift+S
