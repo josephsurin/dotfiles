@@ -68,9 +68,7 @@ endif
 syntax on
 
 " theme settings
-" let g:airline_theme='gruvbox'
-let g:airline_theme='bubblegum'
-" hi Normal guibg=NONE ctermbg=NONE
+let g:airline_theme='base16'
 hi! Normal guibg=NONE ctermbg=NONE
 set background=dark
 set termguicolors
