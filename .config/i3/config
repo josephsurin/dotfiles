@@ -412,5 +412,5 @@ exec --no-startup-id nm-applet
 exec --no-startup-id udiskie --smart-tray
 exec_always --no-startup-id dunst
 exec_always --no-startup-id compton
-exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w wenjun.jpg
+exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w bloodmoon-ruins.jpg
 exec --no-startup-id ibus-daemon -drx

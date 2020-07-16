@@ -40,3 +40,4 @@ application/pdf=org.pwmt.zathura.desktop
 doc=libreoffice-writer.desktop
 docx=libreoffice-writer.desktop
 video/mp4=mpv.desktop
+text/plain=nvim.desktop
