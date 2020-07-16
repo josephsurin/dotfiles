@@ -67,6 +67,9 @@ endif
 " syntax highlighting
 syntax on
 
+" use python filetype for sage
+autocmd BufRead,BufNewFile *.sage set filetype=python
+
 " theme settings
 let g:airline_theme='base16'
 hi! Normal guibg=NONE ctermbg=NONE
