@@ -242,7 +242,7 @@ bindsym Ctrl+e exec --no-startup-id cmus-remote -u
 bindsym Ctrl+q exec --no-startup-id cmus-remote -n
 bindsym Ctrl+Shift+q exec --no-startup-id cmus-remote -r
 
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 gaps inner 4
 gaps outer 2
