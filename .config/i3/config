@@ -245,8 +245,8 @@ bindsym Ctrl+Shift+q exec --no-startup-id cmus-remote -r
 
 for_window [class="^.*"] border pixel 1
 
-gaps inner 4
-gaps outer 2
+gaps inner 0
+gaps outer 0
 
 smart_gaps on
 
