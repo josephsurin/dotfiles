@@ -20,6 +20,15 @@ text/plain=nvim.desktop;firefox.desktop;
 text/plain=firefox.desktop;
 binary/octet-stream=sxiv.desktop;.hide-nvim.desktop;
 image/png=feh.desktop;
+application/octet-stream=nvim.desktop;firefox.desktop;
+application/zip=nvim.desktop;
+text/x-python=nvim.desktop;firefox.desktop;
+application/javascript=nvim.desktop;nvim.desktop;
+text/plain=nvim.desktop;firefox.desktop;
+text/plain=firefox.desktop;
+binary/octet-stream=nvim.desktop;.hide-nvim.desktop;
+image/png=sxiv.desktop;feh.desktop;
+image/jpeg=feh.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
@@ -39,3 +48,5 @@ application/pdf=org.pwmt.zathura.desktop
 doc=libreoffice-writer.desktop
 docx=libreoffice-writer.desktop
 video/mp4=mpv.desktop
+text/plain=nvim.desktop
+application/octet-stream=/usr/share/applications/nvim.desktop

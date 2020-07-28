@@ -9,6 +9,8 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+set $term alacritty
+
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -30,7 +32,7 @@ set $mod Mod4
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec $term
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -153,6 +155,15 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
+set $grey #494949
+set $mgrey #909498
+set $lgrey #e5e5e5
+
+# Basic color configuration using the Base16 variables for windows and borders.
+# Property Name         Border  BG      Text    Indicator Child Border
+client.focused          $lgrey  $lgrey  $lgrey  $mgrey  $lgrey
+client.unfocused        $grey   $grey   $grey   $grey   $grey
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -184,7 +195,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $powermenutitle "Monitor (M), Lock (L), Exit(E), Reboot (R), Poweroff (D)"
+set $powermenutitle "(M)onitor, (L)ock, (E)xit, (R)eboot, (S)uspend, Poweroff (D)"
 
 mode $powermenutitle  {
 	bindsym Escape mode "default"
@@ -192,6 +203,7 @@ mode $powermenutitle  {
 	bindsym L exec --no-startup-id i3-msg mode "default" && betterlockscreen -l dimblur
 	bindsym E exec i3-msg exit
 	bindsym R mode "press Enter to reboot"
+	bindsym S exec --no-startup-id systemctl suspend 
 	bindsym D mode "press Enter to poweroff"
 }
 mode "press Enter to reboot" {
@@ -206,8 +218,8 @@ bindsym $mod+Shift+S mode $powermenutitle
 
 # program shortcuts
 bindsym $mod+Shift+f exec --no-startup-id firefox
-bindsym $mod+e exec --no-startup-id termite -e "ranger"
-bindsym $mod+p exec --no-startup-id termite -e "python"
+bindsym $mod+e exec --no-startup-id $term -e "ranger"
+bindsym $mod+p exec --no-startup-id $term -e "python"
 bindsym $mod+c exec ~/.config/scripts/stickers.sh
 
 # screenshot commands
@@ -231,10 +243,10 @@ bindsym Ctrl+Shift+e exec --no-startup-id cmus-remote -u
 bindsym Ctrl+q exec --no-startup-id cmus-remote -n
 bindsym Ctrl+Shift+q exec --no-startup-id cmus-remote -r
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 
-gaps inner 4
-gaps outer 2
+gaps inner 0
+gaps outer 0
 
 smart_gaps on
 
@@ -400,5 +412,5 @@ exec --no-startup-id nm-applet
 exec --no-startup-id udiskie --smart-tray
 exec_always --no-startup-id dunst
 exec_always --no-startup-id compton
-exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w wenjun.jpg
+exec --no-startup-id $HOME/.config/scripts/walswitch.sh -w bloodmoon-ruins.jpg
 exec --no-startup-id ibus-daemon -drx

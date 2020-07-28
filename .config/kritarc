@@ -2,13 +2,13 @@ AlsoSaveAsKra=false
 AntialiasSelectionOutline=false
 ArtColorSel.ColorSpace=0
 ArtColorSel.InversedSaturation=false
-ArtColorSel.Light=1
+ArtColorSel.Light=0.09252344059512074
 ArtColorSel.LightPieces=11
 ArtColorSel.NumRings=7
 ArtColorSel.RingPieces=12
-ArtColorSel.SelColorH=0
-ArtColorSel.SelColorS=0
-ArtColorSel.SelColorX=1
+ArtColorSel.SelColorH=0.6666666666666666
+ArtColorSel.SelColorS=0.024446563009942728
+ArtColorSel.SelColorX=0.09252344059512074
 ArtColorSel.defaultHueSteps=12
 ArtColorSel.defaultSaturationSteps=7
 ArtColorSel.defaultValueScaleSteps=11
@@ -30,18 +30,17 @@ ColorManagement/UseSystemMonitorProfile=false
 ConvertToImageColorSpaceOnImport=false
 CreateBackupFile=true
 ExportConfiguration-image/jpeg=<!DOCTYPE params>\n<params>\n <param name="baseline" type="internal">true</param>\n <param name="exif" type="internal">true</param>\n <param name="filters" type="string"><![CDATA[]]></param>\n <param name="forceSRGB" type="internal">false</param>\n <param name="iptc" type="internal">true</param>\n <param name="optimize" type="internal">true</param>\n <param name="progressive" type="internal">false</param>\n <param name="quality" type="internal">67</param>\n <param name="saveProfile" type="internal">true</param>\n <param name="smoothing" type="internal">0</param>\n <param name="storeAuthor" type="internal">false</param>\n <param name="storeMetaData" type="internal">false</param>\n <param name="subsampling" type="internal">0</param>\n <param name="transparencyFillcolor" type="color"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB b="1" r="1" space="sRGB-elle-V2-g10.icc" g="1"/>\n</color>\n]]></param>\n <param name="xmp" type="internal">true</param>\n</params>\n
-ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compression">2</param>\n <param type="internal" name="forceSRGB">true</param>\n <param type="internal" name="indexed">false</param>\n <param type="internal" name="interlaced">false</param>\n <param type="internal" name="saveAsHDR">false</param>\n <param type="internal" name="saveSRGBProfile">false</param>\n <param type="internal" name="storeAuthor">false</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB b="1" g="1" space="sRGB-elle-V2-g10.icc" r="1"/>\n</color>\n]]></param>\n</params>\n
-ExportConfiguration-image/tiff=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compressiontype">0</param>\n <param type="internal" name="deflate">6</param>\n <param type="internal" name="flatten">true</param>\n <param type="internal" name="pixarlog">6</param>\n <param type="internal" name="predictor">0</param>\n <param type="internal" name="quality">80</param>\n <param type="internal" name="saveProfile">true</param>\n</params>\n
+ExportConfiguration-image/png=<!DOCTYPE params>\n<params>\n <param type="internal" name="alpha">true</param>\n <param type="internal" name="compression">2</param>\n <param type="internal" name="forceSRGB">true</param>\n <param type="internal" name="indexed">false</param>\n <param type="internal" name="interlaced">false</param>\n <param type="internal" name="saveAsHDR">false</param>\n <param type="internal" name="saveSRGBProfile">false</param>\n <param type="internal" name="storeAuthor">false</param>\n <param type="internal" name="storeMetaData">false</param>\n <param type="color" name="transparencyFillcolor"><![CDATA[<!DOCTYPE color>\n<color>\n <RGB b="1" r="1" space="sRGB-elle-V2-g10.icc" g="1"/>\n</color>\n]]></param>\n</params>\n
+ExportConfiguration-image/tiff=<!DOCTYPE params>\n<params>\n <param name="alpha" type="internal">true</param>\n <param name="compressiontype" type="internal">0</param>\n <param name="deflate" type="internal">6</param>\n <param name="flatten" type="internal">true</param>\n <param name="pixarlog" type="internal">6</param>\n <param name="predictor" type="internal">0</param>\n <param name="quality" type="internal">80</param>\n <param name="saveProfile" type="internal">true</param>\n</params>\n
 FetchNews=false
-FilterSelector/LastUsedFilter=hsvadjustment
 GamutMasks.viewMode=0
 KineticScrollingEnabled=true
 KineticScrollingGesture=2
 KineticScrollingHideScrollbar=false
 KineticScrollingSensitivity=75
 KisDlgPreferences/CurrentPage=shortcuts
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB space="sRGB-elle-V2-srgbtrc.icc" g="0" b="0" r="0"/>\n</LastBackGroundColor>\n
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB space="sRGB-elle-V2-srgbtrc.icc" g="1" b="1" r="1"/>\n</LastForeGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB g="1" b="0" r="0" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastBackGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB g="0.062745101749897" b="0.0784313753247261" r="0.062745101749897" space="sRGB-elle-V2-srgbtrc.icc"/>\n</LastForeGroundColor>\n
 LastPreset=b)_Basic-1
 LineSmoothingDelayDistance=50
 LineSmoothingDistance=50
@@ -52,7 +51,7 @@ LineSmoothingStabilizeSensors=true
 LineSmoothingTailAggressiveness=0.15
 LineSmoothingType=1
 LineSmoothingUseDelayDistance=true
-NumberOfLayersForNewImage=2
+NumberOfLayersForNewImage=1
 OpenGLFilterMode=0
 ShowGlobalSelection=true
 ShowOutlineWhilePainting=true
@@ -103,7 +102,7 @@ enableOpenGLFramerateLogging=false
 enablePerfLog=false
 enableProgressReporting=true
 favoriteCompositeOps=normal,erase,multiply,burn,darken,add,dodge,screen,soft_light_svg,luminize,lighten,saturation,color,divide,overlay
-filterdialog/geometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06I\x00\x00\x00\xb2\x00\x00\x08M\x00\x00\x02~\x00\x00\x06I\x00\x00\x00\xb2\x00\x00\x08M\x00\x00\x02~\x00\x00\x00\x00\x00\x00\x00\x00\x06@\x00\x00\x06I\x00\x00\x00\xb2\x00\x00\x08M\x00\x00\x02~
+filterdialog/geometry=\x01\xd9\xd0\xcb\x00\x03\x00\x00\x00\x00\x06E\x00\x00\x00\xb2\x00\x00\x08I\x00\x00\x02~\x00\x00\x06E\x00\x00\x00\xb2\x00\x00\x08I\x00\x00\x02~\x00\x00\x00\x00\x00\x00\x00\x00\x06@\x00\x00\x06E\x00\x00\x00\xb2\x00\x00\x08I\x00\x00\x02~
 filterdialog/rememberlastpreset=false
 forceAlwaysFullSizedOutline=false
 fpsLimit=100
@@ -133,7 +132,7 @@ hideTitleBarFullscreen=true
 hideToolbarFullscreen=true
 imageHeightDef=3508
 imageResolutionDef=300
-imageWidthDef=2480
+imageWidthDef=4960
 internal_selector_active_color_set=Gradient
 levelOfDetailEnabled=false
 logviewer_enabled=false
@@ -148,8 +147,8 @@ memorySoftLimitPercent=2
 monitorProfile=sRGB-elle-V2-srgbtrc.icc
 monitorProfile/OverrideX11=false
 monitorProfile_1=sRGB-elle-V2-srgbtrc.icc
-moveToolChangedValueX=314
-moveToolChangedValueY=141
+moveToolChangedValueX=113
+moveToolChangedValueY=375
 moveToolUnit=0
 newCursorStyle=0
 newOutlineStyle=2
@@ -205,7 +204,7 @@ pasteBehaviour=1
 pixelGridColor=255,255,255
 pixelGridDrawingThreshold=24
 preferredVectorImportResolution=10000
-presethistory=b)_Basic-6_Details,b)_Basic-5_Size,c)_Pencil-1_Hard,b)_Basic-4_Flow_Opacity,c)_Pencil-2,b)_Basic-1,b)_Basic-2_Opacity,d)_Ink-7_Brush_Rough,f)_Bristles-1_Details,a)_Eraser_Small
+presethistory=b)_Basic-5_Size_Opacity,b)_Basic-6_Details,b)_Basic-5_Size,c)_Pencil-1_Hard,b)_Basic-4_Flow_Opacity,c)_Pencil-2,b)_Basic-1,b)_Basic-2_Opacity,d)_Ink-7_Brush_Rough,f)_Bristles-1_Details
 renderIntent=0
 rulersTrackMouse=false
 saveSessionOnQuit=false
@@ -239,13 +238,13 @@ workingColorSpace=RGBA
 
 [File Dialogs]
 DontUseNativeFileDialog=true
-OpenDocument=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/past-exams/2014
-SaveAs=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images
+OpenDocument=/media/winarch-shared/uni/misc-stuff/events/2020-s1-wk0-o-week/posters
+SaveAs=/home/joseph/Downloads/shit
 krita_resources=/home/joseph/Downloads/shit/2017-03-07_deevad-palettes
 layerstyle=/home/joseph/.local/share/krita/layerstyles
 
 [KisShortcutsDialog Settings]
-Dialog Size=692,542
+Dialog Size=702,559
 
 [KisToolCrop]
 allowGrow=false
@@ -289,7 +288,7 @@ iconSize=14
 featherAmount=0
 growSelection=0
 sampleMerged=true
-thresholdAmount=20
+thresholdAmount=5
 
 [KritaFill/KisToolGradient]
 antialiasThreshold=0
@@ -306,12 +305,13 @@ roundCornersX=20
 roundCornersY=20
 
 [MainWindow]
-Height 768=734
+Height 768=722
 Height 900=870
-State=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bwBjAGsAZQByAAAAAAD/////AAAAUwD////7AAAAFABHAHIAaQBkAEQAbwBjAGsAZQByAAAAAAD/////AAABKwD////7AAAAHgBIAGkAcwB0AG8AZwByAGEAbQBEAG8AYwBrAGUAcgAAAAAA/////wAAAEUA////+wAAACoAQQBuAGkAbQBhAHQAaQBvAG4AQwB1AHIAdgBlAHMARABvAGMAawBlAHIAAAAAAP////8AAABvAP////sAAAAyAFMAdgBnAFMAeQBtAGIAbwBsAEMAbwBsAGwAZQBjAHQAaQBvAG4ARABvAGMAawBlAHIAAAAAAP////8AAABvAP////sAAAAWAFQAbwB1AGMAaABEAG8AYwBrAGUAcgAAAAJMAAABMQAAABEA////+wAAABoAQQByAHIAYQBuAGcAZQBEAG8AYwBrAGUAcgAAAALmAAAAXAAAADAA////+wAAABIARwBhAG0AdQB0AE0AYQBzAGsAAAAAAP////8AAAEaAP////sAAAASAEwAbwBnAEQAbwBjAGsAZQByAAAAAAD/////AAAAbgD///8AAAACAAAGQAAAALz8AQAAAAH7AAAAGgBUAG8AbwBsAEIAYQByAEQAbwBjAGsAZQByAAAAAAD/////AAAAAAAAAAAAAAADAAAAAAAAAAD8AQAAAAT7AAAAHABGAGwAaQBwAGIAbwBvAGsARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAPsAAAAeAEEAbgBpAG0AYQB0AGkAbwBuAEQAbwBjAGsAZQByAAAAAAD/////AAAA9gD////7AAAAIABPAG4AaQBvAG4AUwBrAGkAbgBzAEQAbwBjAGsAZQByAAAAAAD/////AAABIwD////7AAAAHABUAGkAbQBlAGwAaQBuAGUARABvAGMAawBlAHIAAAAAAP////8AAABBAP///wAABPUAAAMSAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAwAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAHgBCAHIAdQBzAGgAZQBzAEEAbgBkAFMAdAB1AGYAZgEAAAC7AAAFhQAAAAAAAAAA
-Width 1366=1366
+State=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bwBjAGsAZQByAAAAAAD/////AAAAVwD////7AAAAFABHAHIAaQBkAEQAbwBjAGsAZQByAAAAAAD/////AAABLQD////7AAAAHgBIAGkAcwB0AG8AZwByAGEAbQBEAG8AYwBrAGUAcgAAAAAA/////wAAAEcA////+wAAACoAQQBuAGkAbQBhAHQAaQBvAG4AQwB1AHIAdgBlAHMARABvAGMAawBlAHIAAAAAAP////8AAAB4AP////sAAAAyAFMAdgBnAFMAeQBtAGIAbwBsAEMAbwBsAGwAZQBjAHQAaQBvAG4ARABvAGMAawBlAHIAAAAAAP////8AAAB5AP////sAAAAWAFQAbwB1AGMAaABEAG8AYwBrAGUAcgAAAAJMAAABMQAAABMA////+wAAABoAQQByAHIAYQBuAGcAZQBEAG8AYwBrAGUAcgAAAALmAAAAXAAAADcA////+wAAABIARwBhAG0AdQB0AE0AYQBzAGsAAAAAAP////8AAAEkAP////sAAAASAEwAbwBnAEQAbwBjAGsAZQByAAAAAAD/////AAAAeQD////7AAAAEABTAG4AYQBwAHMAaABvAHQBAAAB/wAAALUAAAB4AP///wAAAAIAAAZAAAAAvPwBAAAAAfsAAAAaAFQAbwBvAGwAQgBhAHIARABvAGMAawBlAHIAAAAAAP////8AAAAAAAAAAAAAAAMAAAAAAAAAAPwBAAAABPsAAAAcAEYAbABpAHAAYgBvAG8AawBEAG8AYwBrAGUAcgAAAAAA/////wAAAAAAAAAA+wAAAB4AQQBuAGkAbQBhAHQAaQBvAG4ARABvAGMAawBlAHIAAAAAAP////8AAAD4AP////sAAAAgAE8AbgBpAG8AbgBTAGsAaQBuAHMARABvAGMAawBlAHIAAAAAAP////8AAAEqAP////sAAAAcAFQAaQBtAGUAbABpAG4AZQBEAG8AYwBrAGUAcgAAAAAA/////wAAAEYA////AAADdwAAAp4AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAADAAAAAgAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAAeAEIAcgB1AHMAaABlAHMAQQBuAGQAUwB0AHUAZgBmAQAAAMEAAAWFAAAAAAAAAAA=
+StatusBar=Disabled
+Width 1366=675
 Width 1600=1600
-ko_geometry=AdnQywADAAAAAAZAAAAAHgAADH8AAAODAAAGQAAAAB4AAAx/AAADgwAAAAAAAAAABkAAAAZAAAAAHgAADH8AAAOD
+ko_geometry=AdnQywADAAAAAAAGAAAAKAAAAqgAAAL5AAAABgAAACgAAAKoAAAC+QAAAAAAAAAABVYAAAAGAAAAKAAAAqgAAAL5
 
 [MainWindow][DockWidget AnimationCurvesDocker]
 Collapsed=false
@@ -362,10 +362,10 @@ yPosition=0
 Collapsed=false
 DockArea=1
 Locked=false
-height=463
+height=461
 width=640
 xPosition=0
-yPosition=17
+yPosition=19
 
 [MainWindow][DockWidget CompositionDocker]
 Collapsed=false
@@ -407,28 +407,28 @@ yPosition=0
 Collapsed=false
 DockArea=2
 Locked=false
-height=463
+height=461
 width=640
 xPosition=0
-yPosition=17
+yPosition=19
 
 [MainWindow][DockWidget History]
 Collapsed=false
 DockArea=2
 Locked=false
-height=463
+height=461
 width=640
 xPosition=0
-yPosition=17
+yPosition=19
 
 [MainWindow][DockWidget KisLayerBox]
 Collapsed=false
 DockArea=1
 Locked=false
-height=237
+height=179
 width=258
 xPosition=0
-yPosition=17
+yPosition=19
 
 [MainWindow][DockWidget LogDocker]
 Collapsed=false
@@ -452,10 +452,10 @@ yPosition=0
 Collapsed=false
 DockArea=1
 Locked=false
-height=213
+height=161
 width=258
 xPosition=0
-yPosition=17
+yPosition=19
 
 [MainWindow][DockWidget PaletteDocker]
 Collapsed=false
@@ -470,7 +470,7 @@ yPosition=0
 Collapsed=false
 DockArea=2
 Locked=false
-height=292
+height=307
 width=256
 xPosition=0
 yPosition=0
@@ -497,10 +497,19 @@ yPosition=0
 Collapsed=false
 DockArea=2
 Locked=false
-height=463
+height=461
 width=640
 xPosition=0
-yPosition=17
+yPosition=19
+
+[MainWindow][DockWidget Snapshot]
+Collapsed=false
+DockArea=2
+Locked=false
+height=154
+width=209
+xPosition=0
+yPosition=19
 
 [MainWindow][DockWidget SpecificColorSelector]
 Collapsed=false
@@ -515,10 +524,10 @@ yPosition=0
 Collapsed=false
 DockArea=2
 Locked=false
-height=463
+height=461
 width=640
 xPosition=0
-yPosition=17
+yPosition=19
 
 [MainWindow][DockWidget TasksetDocker]
 Collapsed=false
@@ -542,10 +551,10 @@ yPosition=0
 Collapsed=false
 DockArea=1
 Locked=false
-height=253
+height=192
 width=258
 xPosition=0
-yPosition=15
+yPosition=18
 
 [MainWindow][DockWidget TouchDocker]
 Collapsed=false
@@ -587,39 +596,39 @@ yPosition=17
 Collapsed=false
 DockArea=2
 Locked=false
-height=769
-width=63
+height=430
+width=209
 xPosition=0
-yPosition=17
+yPosition=19
 
 [RecentFiles]
-File1[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/34.png
-File10[$e]=/media/winarch-shared/uni/2020s1/COMP20007 Design of Algorithms/past-exams/2020-practice-exam/exam.kra
-File2[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/35.png
-File3[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/36.png
-File4[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/37.png
-File5[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/38.png
-File6[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/39.png
-File7[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/40.png
-File8[$e]=/media/winarch-shared/uni/2020s1/UNIB10002 Logic Language and Information/final-exam/finished-images/41.png
-File9[$e]=/media/winarch-shared/uni/2020s1/MAST20009 Vector Calculus/past-exams/2019s1/exam.kra
-Name1[$e]=34.png
-Name10[$e]=exam.kra
-Name2[$e]=35.png
-Name3[$e]=36.png
-Name4[$e]=37.png
-Name5[$e]=38.png
-Name6[$e]=39.png
-Name7[$e]=40.png
-Name8[$e]=41.png
-Name9[$e]=exam.kra
-maxRecentFileItems=100
+File1[$e]=$HOME/Downloads/shit/unib-final-exam/35.png
+File10[$e]=$HOME/Downloads/shit/misc-vaporwave-bg.png
+File2[$e]=$HOME/Downloads/shit/unib-final-exam/36.png
+File3[$e]=$HOME/Downloads/shit/unib-final-exam/37.png
+File4[$e]=$HOME/Downloads/shit/unib-final-exam/38.png
+File5[$e]=$HOME/Downloads/shit/unib-final-exam/39.png
+File6[$e]=$HOME/Downloads/shit/unib-final-exam/40.png
+File7[$e]=$HOME/Downloads/shit/unib-final-exam/41.png
+File8[$e]=$HOME/Downloads/shit/unib-final-exam/../exam.ora
+File9[$e]=$HOME/Downloads/shit/template-wstext.kra
+Name1[$e]=35.png
+Name10[$e]=misc-vaporwave-bg.png
+Name2[$e]=36.png
+Name3[$e]=37.png
+Name4[$e]=38.png
+Name5[$e]=39.png
+Name6[$e]=40.png
+Name7[$e]=41.png
+Name8[$e]=exam.ora
+Name9[$e]=template-wstext.kra
 
 [SvgSymbolCollection]
 currentCollection=0
 
 [SvgTextTool]
-windowState=AAAA/wAAAAD9AAAAAAAAAgIAAAFNAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAYAGYAbwBuAHQAUwBlAHQAdABpAG4AZwBzAQAAAAD/////AAAAAAAAAAAAAAACAAAAAQAAABQAZgBvAHIAbQBhAHQAdABpAG4AZwEAAAAA/////wAAAAAAAAAA
+Geometry=AdnQywADAAAAAAD4AAAAgAAABIUAAAJ/AAAA+AAAAIAAAASFAAACfwAAAAAAAAAABVYAAAD4AAAAgAAABIUAAAJ/
+windowState=AAAA/wAAAAD9AAAAAAAAA44AAAFtAAAABAAAAAQAAAAIAAAACPwAAAADAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAYAGYAbwBuAHQAUwBlAHQAdABpAG4AZwBzAQAAAAD/////AAAAAAAAAAAAAAACAAAAAQAAABQAZgBvAHIAbQBhAHQAdABpAG4AZwEAAAAA/////wAAAAAAAAAA
 
 [TemplateChooserDialog]
 DetailsPaneSplitterSizes=265,332
@@ -652,14 +661,14 @@ CreatingCanvas=false
 showPreview=true
 
 [hsvadjustment_filter_bookmarks]
-Last Used=<!DOCTYPE params>\n<params version="0">\n <param type="internal" name="colorize">false</param>\n <param type="internal" name="h">-107</param>\n <param type="internal" name="s">19</param>\n <param type="internal" name="type">1</param>\n <param type="internal" name="v">26</param>\n</params>\n
+Last Used=<!DOCTYPE params>\n<params version="0">\n <param type="internal" name="colorize">false</param>\n <param type="internal" name="h">-7</param>\n <param type="internal" name="s">-33</param>\n <param type="internal" name="type">1</param>\n <param type="internal" name="v">-30</param>\n</params>\n
 
 [krita]
 ColorSpaceExtensionsPlugins=\\0
 ColorSpaceExtensionsPluginsDisabled=
 ColorSpacePlugins=\\0
 ColorSpacePluginsDisabled=
-DockerPlugins=,,,,,,,,,,,,,,,,,,,,,,
+DockerPlugins=,,,,,,,,,,,,,,,,,,,,,,,
 DockerPluginsDisabled=
 FlakePlugins=,
 FlakePluginsDisabled=

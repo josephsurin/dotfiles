@@ -17,7 +17,6 @@ nnoremap <C-j> <C-d>
 nnoremap <C-k> <C-u>
 
 " line numbers
-highlight LineNr ctermfg=grey
 set number
 
 " max 80 chars per line
@@ -30,6 +29,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'joshdick/onedark.vim'
 " Plug 'liuchengxu/space-vim-dark'
 " Plug 'ycm-core/YouCompleteMe'
+Plug 'lervag/vimtex'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
@@ -54,8 +54,34 @@ Plug 'lervag/vimtex'
 Plug 'chriskempson/base16-vim'
 call plug#end()
 
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+
+colorscheme base16-default-dark
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+
 " syntax highlighting
 syntax on
+
+" use python filetype for sage
+autocmd BufRead,BufNewFile *.sage set filetype=python
+
+" theme settings
+let g:airline_theme='base16'
+hi! Normal guibg=NONE ctermbg=NONE
+set background=dark
+set termguicolors
+hi Comment cterm=italic
+
+" fix line number background colour
+highlight clear LineNr
 
 " vim multiple cursor keybinds
 let g:multi_cursor_use_default_mapping=0

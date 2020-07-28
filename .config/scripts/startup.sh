@@ -5,12 +5,12 @@ then
 	xbindkeys
 	$HOME/.config/scripts/adjust_wacom.sh &
 	mailspring -b &
-	termite -e cmus &
+	alacritty -e cmus &
     # firefox home page
     python -m http.server --directory "$WASHARED/other/dome" 4663 &
 fi
 
-termite -e calcurse &
+alacritty -e calcurse &
 # wait for network to connect ...
 sleep 2
 discord &
