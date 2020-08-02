@@ -27,7 +27,6 @@ font-1 = "Font Awesome 5 Free:style=Solid:size=10;1"
 font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3
-modules-center = date
 modules-right = memory cpu temperature pulseaudio wlan eth vnstat backlight battery
 
 tray-position = right
@@ -60,7 +59,7 @@ font-2 = "Font Awesome 5 Free:style=Solid:size=10;1"
 font-3 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = powermenu i3
-modules-center = 
+modules-center = date
 modules-right = cmus
 
 [module/i3]
