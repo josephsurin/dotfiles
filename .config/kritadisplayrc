@@ -2,6 +2,6 @@
 EnableHiDPI=true
 EnableSingleApplication=true
 LogUsage=true
-OpenGLRenderer=none
+OpenGLRenderer=desktop
 canvasState=OPENGL_SUCCESS
 rootSurfaceFormat=bt709-g22

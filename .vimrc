@@ -24,7 +24,7 @@ set colorcolumn=80
 
 " PLUGINS
 call plug#begin('~/.local/share/nvim/plugged')
-" Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 " Plug 'crusoexia/vim-monokai'
 " Plug 'joshdick/onedark.vim'
 " Plug 'liuchengxu/space-vim-dark'
@@ -60,7 +60,7 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_symbols.space = "\ua0"
 
-colorscheme base16-default-dark
+" colorscheme base16-default-dark
 
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
@@ -74,7 +74,9 @@ syntax on
 autocmd BufRead,BufNewFile *.sage set filetype=python
 
 " theme settings
-let g:airline_theme='base16'
+autocmd vimenter * colorscheme gruvbox
+let g:gruvbox_contrast_dark = "hard"
+let g:airline_theme='gruvbox'
 hi! Normal guibg=NONE ctermbg=NONE
 set background=dark
 set termguicolors
@@ -101,14 +103,6 @@ nmap s <Plug>(easymotion-s2)
 map fj <Plug>(easymotion-j)
 map fk <Plug>(easymotion-k)
 
-" colorscheme and airline theme
-" colorscheme gruvbox
-" let g:airline_theme='gruvbox'
-" colorscheme base16-default-dark
-let g:airline_theme='bubblegum'
-hi Normal guibg=NONE ctermbg=NONE
-hi Comment cterm=italic
-
 " Latex specification
 au BufNewFile,BufRead *.tex
     \ set nocursorline |
@@ -117,6 +111,7 @@ au BufNewFile,BufRead *.tex
     \ let g:loaded_matchparen=1 |
 
 let g:vimtex_compiler_latexmk = {
+    \ 'build_dir': 'build',
     \ 'options' : [
     \   '-shell-escape',
     \   '-verbose',

@@ -29,6 +29,8 @@ text/plain=firefox.desktop;
 binary/octet-stream=nvim.desktop;.hide-nvim.desktop;
 image/png=sxiv.desktop;feh.desktop;
 image/jpeg=feh.desktop;
+application/x-tex=nvim.desktop;
+text/csv=nvim.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

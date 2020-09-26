@@ -55,6 +55,7 @@ export VISUAL=nvim
 export PATH=/usr/lib/jvm/java-14-openjdk/bin/:/home/joseph/.local/bin:~/.npm-global/bin:/home/joseph/.gem/ruby/2.6.0/bin/:$PATH
 export npm_config_prefix=~/.npm-global
 export NODE_PATH=~/.npm-global/lib/node_modules/:~/.config/yarn/global/node_modules/
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 alias ls="lsd"
 alias cat="bat"
