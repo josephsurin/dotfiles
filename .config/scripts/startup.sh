@@ -10,7 +10,7 @@ then
     python -m http.server --directory "$WASHARED/other/dome" 4663 &
 fi
 
-alacritty -e calcurse &
+# alacritty -e calcurse &
 # wait for network to connect ...
 sleep 2
 discord &
