@@ -1,4 +1,10 @@
-(cat ~/.cache/wal/sequences &)
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -9,7 +15,8 @@ export ZSH="/home/joseph/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="risto"
+# ZSH_THEME="risto"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -28,6 +35,8 @@ if [[ $TERM == xterm-termite ]]; then
   . /etc/profile.d/vte.sh
   __vte_osc7
 fi
+
+# (cat ~/.cache/wal/sequences &)
 
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/"
@@ -57,7 +66,7 @@ export npm_config_prefix=~/.npm-global
 export NODE_PATH=~/.npm-global/lib/node_modules/:~/.config/yarn/global/node_modules/
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-alias ls="lsd"
+alias ls="exa"
 alias cat="bat"
 alias v="$EDITOR"
 alias o="mimeo"
@@ -73,3 +82,6 @@ SAVEHIST=100000000
 export HISTSIZE=100000000
 export HISTFILESIZE=100000000
 export SAVEHIST=100000000
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

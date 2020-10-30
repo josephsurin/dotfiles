@@ -20,40 +20,49 @@ nnoremap <C-k> <C-u>
 set number
 
 " max 80 chars per line
-set colorcolumn=80
+" set colorcolumn=80
 
 " PLUGINS
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'morhetz/gruvbox'
+" THEMES
+Plug 'chriskempson/base16-vim'
+Plug 'dracula/vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'morhetz/gruvbox'
 " Plug 'crusoexia/vim-monokai'
 " Plug 'joshdick/onedark.vim'
 " Plug 'liuchengxu/space-vim-dark'
-" Plug 'ycm-core/YouCompleteMe'
-Plug 'lervag/vimtex'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" UTILITY
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ncm2/ncm2'
-Plug 'tpope/vim-haml'
-Plug 'wlangstroth/vim-racket'
-Plug 'roxma/nvim-yarp'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'mzlogin/vim-markdown-toc'
-Plug 'rust-lang/rust.vim'
-Plug 'dart-lang/dart-vim-plugin'
-set completeopt=noinsert,menuone,noselect
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-path'
+
+" PROGRAMMING LANGUAGES
+Plug 'vim-python/python-syntax'
 Plug 'lervag/vimtex'
-Plug 'chriskempson/base16-vim'
+Plug 'sheerun/vim-polyglot'
+" Plug 'rust-lang/rust.vim'
+" Plug 'tpope/vim-haml'
+" Plug 'wlangstroth/vim-racket'
+" Plug 'dart-lang/dart-vim-plugin'
+
+" OBSOLETE
+" Plug 'roxma/nvim-yarp'
+" Plug 'ncm2/ncm2'
+" Plug 'ncm2/ncm2-bufword'
+" Plug 'ncm2/ncm2-path'
+" Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
+" theme settings
 let g:airline_powerline_fonts = 1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -68,19 +77,17 @@ if filereadable(expand("~/.vimrc_background"))
 endif
 
 " syntax highlighting
+let g:python_highlight_all = 1
 syntax on
 
-" use python filetype for sage
-autocmd BufRead,BufNewFile *.sage set filetype=python
-
-" theme settings
-autocmd vimenter * colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
-let g:airline_theme='gruvbox'
-hi! Normal guibg=NONE ctermbg=NONE
+colorscheme dracula
+let g:airline_theme='dracula'
 set background=dark
 set termguicolors
-hi Comment cterm=italic
+" colorscheme gruvbox
+" let g:gruvbox_contrast_dark = "hard"
+" hi! Normal guibg=NONE ctermbg=NONE
+" hi Comment cterm=italic ctermfg=green
 
 " fix line number background colour
 highlight clear LineNr
@@ -103,7 +110,15 @@ nmap s <Plug>(easymotion-s2)
 map fj <Plug>(easymotion-j)
 map fk <Plug>(easymotion-k)
 
+" use python filetype for sage
+autocmd BufRead,BufNewFile *.sage set filetype=python
+augroup filetypedetect
+  au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
+augroup END
+
 " Latex specification
+let g:tex_flavor = 'latex'
+
 au BufNewFile,BufRead *.tex
     \ set nocursorline |
     \ set nornu |
@@ -121,9 +136,9 @@ let g:vimtex_compiler_latexmk = {
     \ ],
     \}
 
-augroup filetypedetect
-  au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
-augroup END
+let g:Tex_BibtexFlavor = 'biber'
+let g:Tex_DefaultTargetFormat="pdf"
+let g:Tex_MultipleCompileFormats='pdf,dvi'
 
 " inkscape-figures
 inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
