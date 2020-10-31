@@ -82,8 +82,8 @@ abbrevs+=(
   "pqi"		"pacman -Qi"
   "ac"		"aria2c"
   "htl"     "heroku logs --tail"
-  "reds"      "redshift -O 4000 -b 0.7"
-  "tsh"     "tshark -r"
+  "reds"    "redshift -O 4000 -b 0.7"
+  "cpss"    "cp \""$WASHARED/screenshots/`date '+%Y-%m'`/"\$(ls "$WASHARED/screenshots/`date '+%Y-%m'`" | tail -n1)\" __CURSOR__"
 )
 
 # SSH aliases
