@@ -53,7 +53,8 @@ scrolling:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: "Sauce Code Pro Nerd Font Mono" # should be "Menlo" or something on macOS.
+    family: "Sauce Code Pro Nerd Font Mono"
+    # family: "Sauce Code Pro Nerd Font Mono" # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
     style: Regular
 
@@ -70,7 +71,7 @@ font:
     style: Italic
 
   # Point size of the font
-  size: 8.5
+  size: 10
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
