@@ -237,9 +237,9 @@ bindsym  $mod+Shift+w exec ~/.config/scripts/walswitch.sh -r
 bindcode 121 exec --no-startup-id pulseaudio-ctl mute
 bindcode 122 exec --no-startup-id pulseaudio-ctl down 5
 bindcode 123 exec --no-startup-id pulseaudio-ctl up 5
-bindcode 72 exec --no-startup-id pulseaudio-ctl mute
-bindcode 73 exec --no-startup-id pulseaudio-ctl down 5
-bindcode 74 exec --no-startup-id pulseaudio-ctl up 5
+bindcode 68 exec --no-startup-id pulseaudio-ctl mute
+bindcode 69 exec --no-startup-id pulseaudio-ctl down 5
+bindcode 70 exec --no-startup-id pulseaudio-ctl up 5
 
 # cmus commands
 bindsym Ctrl+Shift+e exec --no-startup-id cmus-remote -u

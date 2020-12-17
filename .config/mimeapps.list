@@ -31,6 +31,7 @@ image/png=sxiv.desktop;feh.desktop;
 image/jpeg=feh.desktop;
 application/x-tex=nvim.desktop;
 text/csv=nvim.desktop;
+application/xml=nvim.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop

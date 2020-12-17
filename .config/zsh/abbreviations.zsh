@@ -68,7 +68,6 @@ abbrevs+=(
 
 # Program aliases
 abbrevs+=(
-  "dl"		"http --download"
   "jn"		"jupyter-notebook"
   "pi"		"python -i"
   "xc"		"xclip -selection clipboard"
@@ -84,6 +83,7 @@ abbrevs+=(
   "htl"     "heroku logs --tail"
   "reds"    "redshift -O 4000 -b 0.7"
   "cpss"    "cp \""$WASHARED/screenshots/`date '+%Y-%m'`/"\$(ls "$WASHARED/screenshots/`date '+%Y-%m'`" | tail -n1)\" __CURSOR__"
+  "p2c"     "python2 -c \"print '__CURSOR__'\""
 )
 
 # SSH aliases
