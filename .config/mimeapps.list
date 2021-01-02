@@ -32,6 +32,7 @@ image/jpeg=feh.desktop;
 application/x-tex=nvim.desktop;
 text/csv=nvim.desktop;
 application/xml=nvim.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-9F7BW0.desktop;
 
 [Default Applications]
 x-scheme-handler/http=firefox.desktop
@@ -53,3 +54,4 @@ docx=libreoffice-writer.desktop
 video/mp4=mpv.desktop
 text/plain=nvim.desktop
 application/octet-stream=/usr/share/applications/nvim.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-9F7BW0.desktop
