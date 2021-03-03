@@ -77,12 +77,11 @@ abbrevs+=(
   "vfz"		"vim \"\$(fzf --reverse --inline-info)\""
   "cfz"		"cat \"\$(fzf --reverse --inline-info)\""
   "cdfz"	"cd \"\$(dirname \"\$(fzf --reverse --inline-info)\")\""
-  "ws"		"~/.config/scripts/walswitch.sh"
   "pqi"		"pacman -Qi"
   "ac"		"aria2c"
   "htl"     "heroku logs --tail"
   "reds"    "redshift -O 4000 -b 0.7"
-  "cpss"    "cp \""$WASHARED/screenshots/`date '+%Y-%m'`/"\$(ls "$WASHARED/screenshots/`date '+%Y-%m'`" | tail -n1)\" __CURSOR__"
+  "cpss"    "xclip -selection clipboard -o -t image/png > __CURSOR__"
   "p2c"     "python2 -c \"print '__CURSOR__'\""
 )
 
