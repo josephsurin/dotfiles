@@ -51,6 +51,7 @@ Plug 'vim-python/python-syntax'
 Plug 'lervag/vimtex'
 let g:polyglot_disabled = ['markdown']
 Plug 'sheerun/vim-polyglot'
+Plug 'alaviss/nim.nvim'
 " Plug 'rust-lang/rust.vim'
 " Plug 'tpope/vim-haml'
 " Plug 'wlangstroth/vim-racket'

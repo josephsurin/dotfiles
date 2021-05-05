@@ -61,7 +61,7 @@ compinit
 # User configuration
 export EDITOR=nvim
 export VISUAL=nvim
-export PATH=/usr/lib/jvm/java-14-openjdk/bin/:/home/joseph/.local/bin:~/.npm-global/bin:/home/joseph/.gem/ruby/2.7.0/bin/:~/bin:$PATH
+export PATH=/home/joseph/.cargo/bin:/home/joseph/.nimble/bin/:/usr/lib/jvm/java-14-openjdk/bin/:/home/joseph/.local/bin:~/.npm-global/bin:/home/joseph/.gem/ruby/2.7.0/bin/:~/bin:$PATH
 export npm_config_prefix=~/.npm-global
 export NODE_PATH=~/.npm-global/lib/node_modules/:~/.config/yarn/global/node_modules/
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -75,6 +75,7 @@ alias :q="exit"
 alias :wq="exit"
 alias h="http"
 alias genpw="python -c 'import random; import string; print(\"\".join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for _ in range(28)))'"
+alias glog='git log --pretty=format:"%Cblue%h %C(118)%ad%x09%C(220)%<(10)%an%x09%Creset%s %C(196)%d" --date=short --graph'
 
 HISTSIZE=100000000
 HISTFILESIZE=100000000
@@ -83,6 +84,10 @@ export HISTSIZE=100000000
 export HISTFILESIZE=100000000
 export SAVEHIST=100000000
 
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ZLE_RPROMPT_INDENT=0
+DISABLE_UNTRACKED_FILES_DIRTY="true"
