@@ -26,7 +26,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git npm copyfile extract python vi-mode zsh-syntax-highlighting)
+plugins=(git npm copyfile extract python zsh-vi-mode zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/abbreviations.zsh
@@ -91,3 +91,4 @@ bindkey -M vicmd v edit-command-line
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ZLE_RPROMPT_INDENT=0
 DISABLE_UNTRACKED_FILES_DIRTY="true"
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
