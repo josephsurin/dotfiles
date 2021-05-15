@@ -52,6 +52,7 @@ Plug 'lervag/vimtex'
 let g:polyglot_disabled = ['markdown']
 Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'alaviss/nim.nvim'
 " Plug 'rust-lang/rust.vim'
 " Plug 'tpope/vim-haml'
 " Plug 'wlangstroth/vim-racket'

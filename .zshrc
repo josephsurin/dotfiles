@@ -26,7 +26,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(git npm copyfile extract python vi-mode zsh-syntax-highlighting)
+plugins=(git npm copyfile extract python zsh-vi-mode zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.config/zsh/abbreviations.zsh
@@ -75,6 +75,7 @@ alias :q="exit"
 alias :wq="exit"
 alias h="http"
 alias genpw="python -c 'import random; import string; print(\"\".join(random.choice(string.ascii_uppercase + string.ascii_lowercase + string.digits) for _ in range(28)))'"
+alias glog='git log --pretty=format:"%Cblue%h %C(118)%ad%x09%C(220)%<(10)%an%x09%Creset%s %C(196)%d" --date=short --graph'
 
 HISTSIZE=100000000
 HISTFILESIZE=100000000
@@ -83,6 +84,11 @@ export HISTSIZE=100000000
 export HISTFILESIZE=100000000
 export SAVEHIST=100000000
 
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ZLE_RPROMPT_INDENT=0
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+ZVM_VI_INSERT_ESCAPE_BINDKEY=jk
