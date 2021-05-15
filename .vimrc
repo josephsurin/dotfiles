@@ -51,6 +51,7 @@ Plug 'vim-python/python-syntax'
 Plug 'lervag/vimtex'
 let g:polyglot_disabled = ['markdown']
 Plug 'sheerun/vim-polyglot'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Plug 'rust-lang/rust.vim'
 " Plug 'tpope/vim-haml'
 " Plug 'wlangstroth/vim-racket'
@@ -182,3 +183,8 @@ let g:coc_snippet_next = '<c-l>'
 let g:coc_snippet_prev = '<c-h>'
 " Use <C-j> for both expand and jump (make expand higher priority.)
 imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+inoremap <expr> <C-j> ((pumvisible())?("\<C-n>"):("\<C-j>"))
+inoremap <expr> <C-k> ((pumvisible())?("\<C-p>"):("\<C-k>"))
+inoremap <expr> <C-h> ((pumvisible())?("\<C-e>"):("\<C-h>"))
+inoremap <expr> <C-l> ((pumvisible())?("\<C-y>"):("]<C-l>"))
